@@ -7,7 +7,6 @@ pagination:
   alias: posts
 ---
 
-
 <div id="first-view-container">
   <div id="first-view-side">
     <div id="first-view-logo">
