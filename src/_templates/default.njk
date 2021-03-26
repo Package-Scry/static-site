@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      {{ renderData.title }}
+    </title>
+    
+    <style type="text/css">
+      body {
+        background: linear-gradient(179.15deg, #0D262A 0.73%, #143F4A 22.09%, rgba(31, 125, 131, 0.873478) 50.87%, #1D787E 60.42%), #041D22 !important;
+        color: white;
+        margin: 0;
+        padding: 72px 0 0 0;
+        width: 100%;
+        height: 1080px;
+        font-size: 1em;
+      }
+
+      #first-view-container {
+        display: grid;
+        width: 1200px;
+        max-width: 90vw;
+        grid-template-columns: 1fr 3fr;
+        margin: 0 auto;
+      }
+      #first-view-side {
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+        align-content: center;
+        justify-items: center;
+        position: relative;
+      }
+      #first-view-logo img {
+        max-width: 300px;
+        max-width: 100%;
+        height: auto;
+      }
+      #first-view-slogen {
+        font-family: Bitter;
+        line-height: normal;
+        font-size: 1.5em;
+        text-align: center;
+      }
+      #first-view-button {
+        width: fit-content;
+        padding: 0.7em 1em;
+        background: #303740;
+        position: absolute;
+        font-size: 1.5em;
+        cursor: pointer;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%);
+        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+      }
+      #first-view-button:hover {
+        padding: 0.8em 1.2em;
+        height: auto;
+      }
+      #first-view-image {
+        justify-self: end;
+      }
+      #first-view-image img {
+        width: 900px;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    {{ content | safe }}
+  </body>
+</html>
