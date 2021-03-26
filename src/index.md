@@ -17,8 +17,10 @@ pagination:
       Dependency management 
       <br /> with just a click
     </div>
-    <div id="first-view-button">
-      Download for free
+    <div id="first-view-button-container">
+      <div id="first-view-button">
+        Download for free
+      </div>
     </div>
   </div>
   <div id="first-view-image">
