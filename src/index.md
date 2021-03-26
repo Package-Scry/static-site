@@ -1,10 +1,6 @@
 ---
 title: Package Scry
 layout: default.njk
-pagination:
-  data: posts
-  size: 100
-  alias: posts
 ---
 
 <div id="first-view-container">
@@ -33,7 +29,7 @@ pagination:
 
 <div id="second-view-container">
   <ul id="second-view-features">
-    <li id="second-view-feature">
+    <li class="second-view-feature">
       <div class="list-icon">
         <svg width="26" height="26" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter1_d)">
@@ -58,7 +54,7 @@ pagination:
         <br />along with the status of your packages
       </div>
     </li>
-    <li id="second-view-feature">
+    <li class="second-view-feature">
       <div class="list-icon">
         <svg width="26" height="26" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter1_d)">
@@ -83,7 +79,7 @@ pagination:
       <br />package names
       </div>
     </li>
-    <li id="second-view-feature">
+    <li class="second-view-feature">
       <div class="list-icon">
         <svg width="26" height="26" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter1_d)">
