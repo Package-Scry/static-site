@@ -9,6 +9,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function(){
+      const elNav = document.querySelector("nav")
       const elMobileMenu = document.querySelector("#mobile-menu")
       const elMenu = document.querySelector("#menu-container")
 
@@ -18,16 +19,18 @@
 
         if (width < 600) {
           elMenu.style.display = "none"
-          elMobileMenu.style.display = "block"
+          elMobileMenu.style.display = "inline-block"
         } else {
           elMenu.style.display = "block"
           elMobileMenu.style.display = "none"         
         }
       });
 
-        elMobileMenu.addEventListener("click", () =>
+        elMobileMenu.addEventListener("click", () => {
           elMenu.style.display === "block" ? elMenu.style.display = "none" : elMenu.style.display = "block"
-        )
+          console.log(elNav.className)
+          elNav.className = elNav.className?.includes("active") ? "" : `active`
+        })
       })
       </script>
 
@@ -44,6 +47,10 @@
       a, a:hover, a:visited, a:active {
         text-decoration: none;
         color: white;
+      }
+
+      ul {
+            padding-inline-start: 0;
       }
 
       nav {
@@ -75,13 +82,44 @@
         }
       }
       @media screen and (max-width: 600px) {
+        nav {
+          text-align: right;
+          user-select: none;
+        }
+        .active {
+          text-align: center;
+          background: #477e9e;
+          width: 100%;
+          height: 100vh;
+          position: fixed;
+          z-index: 1000;
+        }
         #menu-container {
           display: none;
+          margin: 0;
+        }
+        #mobile-menu::after {
+          content: "☰"
+        }
+        .active #mobile-menu::after {
+          content: "CLOSE"
         }
         #mobile-menu {
-          display: block;
-          background: red;
+          display: inline-block;
           padding: 1em;
+          cursor: pointer;
+          background: #477e9e;
+        }
+        .active #mobile-menu {
+          border-bottom: 1px solid black;
+          width: 100%;
+          padding: 1em 0;
+          margin-bottom: 0.5em;
+        }
+        #menu-container li {
+          display: block;
+          padding: 4px 0;
+          font-size: 2em;
         }
       }
 
@@ -378,6 +416,7 @@
   <body>
   
     <nav>
+      <div id="mobile-menu"></div>
       <ul id="menu-container">
         <li><a href="/">Home</a></li>
         <li><a href="/pricing">Pricing</a></li>
@@ -386,7 +425,6 @@
         <li><a href="/download">Download</a></li>
         <li><a href="/login">Login</a></li>
       </ul>
-      <div id="mobile-menu">=</div>
     </nav>
 
     {{ content | safe }}
