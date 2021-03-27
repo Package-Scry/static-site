@@ -19,7 +19,7 @@ layout: default.njk
     </div>
   </div>
   <div id="first-view-image">
-      <img src="/img/screenshot.png" />
+      <img src="/img/screenshot.png" alt="screenshot" />
   </div>
 </div>
 
@@ -109,5 +109,43 @@ layout: default.njk
   
   <div id="second-view-image">
     <img src="/img/screenshot.png" />
+  </div>
+</div>
+
+<div id="third-view-border">
+</div>
+<div id="third-view-container">
+  <div id="third-view-follows">
+    <div id="social-header">
+      Follow us
+    </div>
+    <div class="social-icon">
+      <img src="/img/twitter.png" alt="twitter" />
+    </div>
+    <div class="social-icon">
+      <img src="/img/reddit.png" alt="reddit" />
+    </div>
+    <div class="social-icon">
+      <img src="/img/logo_256.png" alt="package scry blog" />
+    </div>
+  </div>
+  <div id="third-view-separator">
+  </div>
+  <div id="third-view-subscribe">
+    <div id="subscribe-text">
+      Be up to date with our latest features
+    </div>
+    <div id="subscribe-input-container">
+      <input type="email" id="subscribe-input" placeholder="Email adress" />
+      <div id="subscribe-button">
+        Subscribe
+      </div>
+    </div>
+    <div id="subscribe-checkbox-container">
+      <input type="checkbox" id="subscribe-checkbox" />
+      <div id="subscribe-terms">
+        Accept terms & conditions
+      </div>
+    </div>
   </div>
 </div>
