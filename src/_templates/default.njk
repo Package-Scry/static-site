@@ -20,9 +20,11 @@
         if (width < 600) {
           elMenu.style.display = "none"
           elMobileMenu.style.display = "inline-block"
+          elNav.className = ""
         } else {
           elMenu.style.display = "block"
-          elMobileMenu.style.display = "none"         
+          elMobileMenu.style.display = "none"
+          elNav.className = ""
         }
       });
 
@@ -42,6 +44,7 @@
         width: 100%;
         font-size: 1em;
         font-family: Bitter;
+        box-sizing: border-box;
       }
 
       a, a:hover, a:visited, a:active {
@@ -121,6 +124,23 @@
           padding: 4px 0;
           font-size: 2em;
         }
+      }
+
+      #footer-menu {
+        background: #0C4C5A;
+        width: 100%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        text-align: center;
+        padding: 1.5em 0;
+      }
+      #footer-menu li {
+        display: inline-block;
+        font-size: 1.2em;
+        padding: 0 .5em;
+      }
+      #copyright {
+        margin-top: 1.5em;
       }
 
       #first-view-container {
@@ -428,5 +448,15 @@
     </nav>
 
     {{ content | safe }}
+    <div id="footer-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+      </ul>
+      <div id="copyright">© 2021 Package Scry</div>
+    </div>
   </body>
 </html>
