@@ -13,9 +13,9 @@ layout: default.njk
       <br /> with just a click
     </div>
     <div id="first-view-button-container">
-      <div id="first-view-button">
+      <a id="first-view-button" href="/download">
         Download for free
-      </div>
+      </a>
     </div>
   </div>
   <div id="first-view-image">

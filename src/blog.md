@@ -8,8 +8,6 @@ pagination:
 permalink: 'blog/'
 ---
 
-# Blog
-
 <ul>
 {% for post in posts %}
   <li><a href="/posts/">{{ post.title }}</a></li>
