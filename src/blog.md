@@ -12,12 +12,6 @@ pagination:
   previous: "..."
 ---
 
-<script>
-  // 
-  document.addEventListener("DOMContentLoaded", function(){
-    console.log(this.page.posts)
-  })
-</script>
 <style type="text/css">
   .blog-container {
     max-width: 1200px;
