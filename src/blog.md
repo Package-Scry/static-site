@@ -32,10 +32,10 @@ pagination:
     background: #2D444D;
     padding: 1em;
     border: 1px solid #718990;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--default-shadow);
   }
   .article h1 {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(var(--default-shadow));
     margin-block-start: 0;
     margin-block-end: 0;
     margin: .5em 0 0 0;
@@ -98,7 +98,7 @@ pagination:
     <a href="/posts/{{ post.id }}" class="title-container">
       <h1>{{ post.title }}</h1>
     </a>
-    <div class="text">{{ post.text }}</div>
+    <div class="text">{{ post.intro }}</div>
     <div>Kristóf Szőllősi, {{ post.createdAt }}</div>
   </li>
   {% endfor %}
