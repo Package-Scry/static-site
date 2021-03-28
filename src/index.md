@@ -19,7 +19,7 @@ layout: default.njk
     </div>
   </div>
   <div id="first-view-image">
-      <img src="/img/screenshot.png" alt="screenshot" />
+    <img src="/img/screenshot.png" alt="screenshot" />
   </div>
 </div>
 
