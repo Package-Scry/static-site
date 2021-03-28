@@ -40,6 +40,9 @@ pagination:
     margin-block-end: 0;
     margin: .5em 0 0 0;
   }
+  .article h1:hover {
+    text-decoration: underline;
+  }
   .article .text {
     margin: 1.5em 0;
   }
@@ -92,7 +95,7 @@ pagination:
   <ul class="article-list">
   {% for post in posts %}
   <li class="article">
-    <a href="/post/{{ post.id }}" class="title-container">
+    <a href="/posts/{{ post.id }}" class="title-container">
       <h1>{{ post.title }}</h1>
     </a>
     <div class="text">{{ post.text }}</div>
