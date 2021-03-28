@@ -20,6 +20,7 @@ pagination:
     padding: 1em;
     border: 1px solid #718990;
     box-shadow: var(--default-shadow);
+    margin-bottom: 1em;
   }
   #article > #title {
     font-size: 2em;
