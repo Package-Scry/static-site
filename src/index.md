@@ -13,7 +13,7 @@ layout: default.njk
       <br /> with just a click
     </div>
     <div id="first-view-button-container">
-      <a id="first-view-button" href="/download">
+      <a id="first-view-button" class="button" href="/download">
         Download for free
       </a>
     </div>
@@ -137,7 +137,7 @@ layout: default.njk
     </div>
     <div id="subscribe-input-container">
       <input type="email" id="subscribe-input" placeholder="Email adress" />
-      <div id="subscribe-button">
+      <div id="subscribe-button" class="button">
         Subscribe
       </div>
     </div>

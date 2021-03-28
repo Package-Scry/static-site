@@ -37,6 +37,14 @@
       </script>
 
     <style type="text/css">
+      :root {
+        --default-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+        --default-radius: 4px;
+        --button-radius: 4px;
+        --button-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+        --button-padding: 0.5em 1em;
+        --button-font-size: 1.5em;
+      }
       body {
         background: linear-gradient(179.15deg, #0D262A 0.73%, #143F4A 22.09%, rgba(31, 125, 131, 0.873478) 50.87%, #1D787E 60.42%), #041D22 !important;
         color: white;
@@ -54,6 +62,17 @@
 
       ul {
         padding-inline-start: 0;
+        list-style: none;
+      }
+
+      .button {
+        cursor: pointer;
+        border-radius: var(--button-radius);
+        padding: var(--button-padding);
+        font-size: var(--button-font-size);
+        box-shadow: var(--button-shadow);
+        text-shadow: var(--default-shadow);
+        text-align: center;
       }
 
       nav {
@@ -63,7 +82,6 @@
       }
       #menu-container {
         display: inline-block;
-        list-style: none;
         margin-right: 4px;
       }
       #menu-container li {

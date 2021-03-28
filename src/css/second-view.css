@@ -2,7 +2,7 @@
   line-height: normal;
   font-size: 3em;
   text-align: center;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: var(--default-shadow);
   margin: 4em auto 2em auto;
   width: 1200px;
 }
@@ -27,7 +27,7 @@
 .second-view-feature {
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 1.2vw;
+  column-gap: 1em;
   width: 100%;
 }
 .list-icon {

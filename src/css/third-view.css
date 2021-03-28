@@ -26,7 +26,7 @@
 #social-header {
   font-family: Bitter;
   grid-column: 1 / span 3;
-  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(var(--default-shadow));
 }
 .social-icon {
   justify-self: center;
@@ -54,7 +54,7 @@
   line-height: normal;
   font-size: 1.5em;
   text-align: left;
-  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(var(--default-shadow));
 }
 #subscribe-input-container {
   display: grid;
@@ -62,25 +62,18 @@
   column-gap: 2em;
 }
 #subscribe-input {
-  border-radius: 4px;
-  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.3));
+  border-radius: var(--default-radius);
+  filter: drop-shadow(var(--default-shadow));
   font-size: 1.2em;
   border: none;
   outline: none;
+  padding: 0.5em 1em;
 }
 #subscribe-input:focus {
   outline: none;
 }
 #subscribe-button {
-  font-family: Bitter;
-  cursor: pointer;
   background: #128CB4;
-  border-radius: 4px;
-  padding: 0.5em 1em;
-  font-size: 1.5em;
-  box-shadow: 0 3px 3px  rgba(0, 0, 0, 0.3);
-  text-shadow: 0 3px 3px  rgba(0, 0, 0, 0.4);
-  text-align: center;
 }
 #subscribe-button:hover {
   background: #027CB4;
@@ -91,7 +84,7 @@
   font-size: 1em;
   column-gap: 0.5em;
   align-items: center;
-  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: var(--default-shadow);
 }
 
 @media screen and (max-width: 1200px) {
