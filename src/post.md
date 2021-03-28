@@ -1,7 +1,7 @@
 ---
 title: Post
 layout: default.njk
-permalink: 'posts/{{ post.id }}/'
+permalink: 'posts/{{ post.title }}/'
 pagination:
   data: posts
   size: 1

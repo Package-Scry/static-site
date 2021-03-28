@@ -95,7 +95,7 @@ pagination:
   <ul class="article-list">
   {% for post in posts %}
   <li class="article">
-    <a href="/posts/{{ post.id }}" class="title-container">
+    <a href="/posts/{{ post.title }}" class="title-container">
       <h1>{{ post.title }}</h1>
     </a>
     <div class="text">{{ post.intro }}</div>
