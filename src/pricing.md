@@ -18,12 +18,13 @@ permalink: 'pricing/'
   }
   .pricing-table {
     display: grid;
-    background: rgba(48, 55, 64, 0.6);
+    background: rgba(48, 55, 64, .8);
     border: 1px solid #61828D;
     padding: 1.5rem 2rem;
     max-width: 400px;
     text-align: center;
-    box-shadow: var(--default-shadow)
+    box-shadow: var(--default-shadow);
+    grid-template-rows: auto auto calc(200px + 2rem) 1fr auto;
   }
   h1 {
     margin: 0 0 .5rem 0;
@@ -44,10 +45,9 @@ permalink: 'pricing/'
   .pro {
     height: 200px;
     display: grid;
-    grid-column-rows: auto auto;
     grid-template-rows: 1fr auto auto 1fr;
     row-gap: 5px;
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
   .pro > .separator {
     grid-column: 1 / span 2;
@@ -83,13 +83,13 @@ permalink: 'pricing/'
     font-size: 1em;
   }
   .features {
-    margin: 0 auto;
+    margin: auto;
   }
   .feature {
     display: grid;
     justify-content: start;
     grid-template-columns: 25px auto;
-    column-gap: 4px;
+    column-gap: 8px;
     margin: 2rem 0;
   }
   svg {
