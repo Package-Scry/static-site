@@ -6,7 +6,8 @@ permalink: 'pricing/'
 
 <style>
   #pricing-container {
-    max-width: 1200px;
+    width: 1200px;
+    max-width: 90vw;
     min-height: 100vh;
     margin: 0 auto;
     padding: 0 1rem;
@@ -15,13 +16,24 @@ permalink: 'pricing/'
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
+    justify-items: center;
+    margin: 0 0 2rem 0;
+  }
+  @media screen and (max-width: 1200px) {
+    #pricing-tables {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+    .pricing-table:last-child {
+      grid-row: 1;
+    }
   }
   .pricing-table {
     display: grid;
     background: rgba(48, 55, 64, .8);
     border: 1px solid #61828D;
     padding: 1.5rem 2rem;
-    max-width: 400px;
+    width: 400px;
     text-align: center;
     box-shadow: var(--default-shadow);
     grid-template-rows: auto auto calc(200px + 2rem) 1fr auto;
