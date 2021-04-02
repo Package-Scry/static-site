@@ -46,7 +46,7 @@
         --button-font-size: 1.5em;
       }
       body {
-        background: linear-gradient(179.15deg, #0D262A 0.73%, #143F4A 22.09%, rgba(31, 125, 131, 0.873478) 50.87%, #1D787E 60.42%), #041D22 !important;
+        background: linear-gradient(179.15deg, #0D262A 0.73%, #143F4A 22.09%, rgba(31, 125, 131, 0.873478) 50.87%, #1D787E 60.42%), #041D22;
         color: white;
         margin: 0;
         width: 100%;
@@ -73,6 +73,14 @@
         box-shadow: var(--button-shadow);
         text-shadow: var(--default-shadow);
         text-align: center;
+      }
+
+      .button.primary {
+        background: #61828D;
+        min-width: 100px;
+      }
+      .button:hover.primary {
+        background: #758B8E;
       }
 
       nav {
