@@ -167,7 +167,7 @@ permalink: 'pricing/'
           <div class="description">Commercial use</div>
         </li>
       </ul>
-      <div class="button primary">Download</div>
+      <a class="button primary" href="/download">Download</a>
     </div>
     <div class="pricing-table">
       <h1 class="header">Pro</h1>
@@ -214,7 +214,7 @@ permalink: 'pricing/'
           <div class="description">Priority support </div>
         </li>
       </ul>
-      <div class="button primary">Buy now</div>
+      <a class="button primary" href="/sign-up">Buy now</a>
     </div>
   </div>
 </div>
