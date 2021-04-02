@@ -118,14 +118,10 @@ permalink: 'pricing/'
     align-self: center;
     filter: drop-shadow(var(--default-shadow));
   }
-  .free {
-    background: #61828D;
-    max-width: 300px;
+  .primary {
     margin: auto auto 0 auto;
   }
-  .free:hover {
-    background: #62628D;
-  }
+
 </style>
 
 <div class="logo-container">
@@ -171,7 +167,7 @@ permalink: 'pricing/'
           <div class="description">Commercial use</div>
         </li>
       </ul>
-      <div class="button free">Download</div>
+      <div class="button primary">Download</div>
     </div>
     <div class="pricing-table">
       <h1 class="header">Pro</h1>
@@ -181,7 +177,7 @@ permalink: 'pricing/'
         <h1>$4.99</h1>
         <span class="sub-description">user/month <br />billed if annually</span>
         <h3>$6.99</h3>
-        <span class="sub-description">user/month <br />billed if annually</span>
+        <span class="sub-description">user/month <br />billed if monthly</span>
         <div class="separator"></div>
       </div>
       <ul class="features">
@@ -218,7 +214,7 @@ permalink: 'pricing/'
           <div class="description">Priority support </div>
         </li>
       </ul>
-      <div class="button free">Buy now</div>
+      <div class="button primary">Buy now</div>
     </div>
   </div>
 </div>
