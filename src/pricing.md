@@ -11,6 +11,7 @@ permalink: 'pricing/'
     min-height: 100vh;
     margin: 0 auto;
     padding: 0 1rem;
+    box-sizing: border-box;
   }
   #pricing-tables {
     display: grid;
@@ -18,15 +19,6 @@ permalink: 'pricing/'
     column-gap: 3rem;
     justify-items: center;
     margin: 0 0 2rem 0;
-  }
-  @media screen and (max-width: 1200px) {
-    #pricing-tables {
-      grid-template-columns: 1fr;
-      row-gap: 2rem;
-    }
-    .pricing-table:last-child {
-      grid-row: 1;
-    }
   }
   .pricing-table {
     display: grid;
@@ -37,6 +29,29 @@ permalink: 'pricing/'
     text-align: center;
     box-shadow: var(--default-shadow);
     grid-template-rows: auto auto calc(200px + 2rem) 1fr auto;
+  }
+
+  @media screen and (max-width: 1200px) {
+    #pricing-tables {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+    .pricing-table:last-child {
+      grid-row: 1;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #pricing-container {
+      margin: 0 auto;
+      padding: .25em;
+      max-width: 95vw;
+    }
+    .pricing-table {
+      box-sizing: border-box;
+      width: 100%;
+      grid-template-rows: auto auto calc(150px + 2rem) 1fr auto;
+    }
   }
   h1 {
     margin: 0 0 1.5rem 0;
@@ -124,6 +139,7 @@ permalink: 'pricing/'
   .pricing-button {
     margin: 3rem auto 0 auto;
   }
+
 
 </style>
 
