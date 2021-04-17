@@ -39,8 +39,8 @@ permalink: 'pricing/'
     grid-template-rows: auto auto calc(200px + 2rem) 1fr auto;
   }
   h1 {
-    margin: 0 0 .5rem 0;
-    font-size: 2.5em;
+    margin: 0 0 1.5rem 0;
+    font-size: 2.75em;
     filter: drop-shadow(var(--default-shadow));
     font-weight: 100;
   }
@@ -49,17 +49,17 @@ permalink: 'pricing/'
     text-shadow: var(--default-shadow)
   }
   .price-container {
-    height: 200px;
+    height: 220px;
     display: grid;
     grid-template-rows: 1fr auto auto 1fr;
-    margin-top: 1rem;
+    margin: 1.25rem 0;
   }
   .pro {
-    height: 200px;
+    height: 220px;
     display: grid;
     grid-template-rows: 1fr auto auto 1fr;
     row-gap: 5px;
-    margin: 1rem 0;
+    margin: 1.25rem 0;
   }
   .pro > .separator {
     grid-column: 1 / span 2;
@@ -74,13 +74,16 @@ permalink: 'pricing/'
   }
   h2 {
     margin: 0 0 .2rem 0;
-    font-size: 1.75em;
+    font-size: 2.25em;
     filter: drop-shadow(var(--default-shadow));
     font-weight: 100;
   }
+  #monthly-price {
+    font-size: 2.25em;
+  }
   h3 {
     margin: auto 0;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 100;
   }
   .sub-description {
@@ -95,7 +98,7 @@ permalink: 'pricing/'
     font-size: 1em;
   }
   .features {
-    margin: auto;
+    margin: 3rem auto 0 auto;
   }
   .feature {
     display: grid;
@@ -118,8 +121,8 @@ permalink: 'pricing/'
     align-self: center;
     filter: drop-shadow(var(--default-shadow));
   }
-  .primary {
-    margin: auto auto 0 auto;
+  .pricing-button {
+    margin: 3rem auto 0 auto;
   }
 
 </style>
@@ -167,14 +170,14 @@ permalink: 'pricing/'
           <div class="description">Commercial use</div>
         </li>
       </ul>
-      <a class="button primary" href="/download">Download</a>
+      <a class="button primary pricing-button" href="/download">Download</a>
     </div>
     <div class="pricing-table">
       <h1 class="header">Pro</h1>
       <span class="description">For individuals & small teams</span>
       <div class="price-container pro">
         <div class="separator"></div>
-        <h1>$4.99</h1>
+        <h1 id="monthly-price">$4.99</h1>
         <span class="sub-description">user/month <br />billed if annually</span>
         <h3>$6.99</h3>
         <span class="sub-description">user/month <br />billed if monthly</span>
@@ -214,7 +217,7 @@ permalink: 'pricing/'
           <div class="description">Priority support </div>
         </li>
       </ul>
-      <a class="button primary" href="/sign-up">Buy now</a>
+      <a class="button primary pricing-button" href="/sign-up">Buy now</a>
     </div>
   </div>
 </div>
