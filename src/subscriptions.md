@@ -20,6 +20,7 @@ h2 {
 #content {
   display: grid;
   align-items: start;
+  padding: 8rem 0 3rem 0 !important;
 }
 #info {
   display: grid;
