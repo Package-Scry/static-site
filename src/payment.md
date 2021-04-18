@@ -1,5 +1,5 @@
 ---
-title: Payment
+title: Sign up
 layout: default.njk
 permalink: 'sign-up/'
 ---
