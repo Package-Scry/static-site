@@ -73,14 +73,54 @@
         box-shadow: var(--button-shadow);
         text-shadow: var(--default-shadow);
         text-align: center;
+        min-width: 100px;
       }
 
       .button.primary {
         background: #61828D;
-        min-width: 100px;
       }
       .button:hover.primary {
         background: #4A6067;
+      }
+      .button.danger {
+        background: #9D4040;
+      }
+      .button:hover.danger {
+        background: #812727;
+      }
+
+      .container {
+        display: grid;
+        width: 1200px;
+        max-width: 90vw;
+        margin: 0 auto;
+        padding: 0 3rem;
+        box-sizing: border-box;
+        background: #243B42;
+        grid-template-rows: 100px 1fr 100px;
+      }
+      .container > #header {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        text-align: center;
+      }
+      .container > #header > h1 {
+        margin: 0 0 1rem 0;
+        font-size: 2.75em;
+        filter: drop-shadow(var(--default-shadow));
+        font-weight: 100;
+        align-self: center;
+        margin: 0;
+      }
+      .container > #header > .separator {
+        align-self: end;
+        background: #0FA8B2;
+        filter: blur(1px);
+        height: 1px;
+      }
+      .container > #content {
+        min-height: 400px;
+        padding: 2rem 0;
       }
 
       nav {
