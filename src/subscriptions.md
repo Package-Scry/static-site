@@ -6,28 +6,27 @@ permalink: 'subscriptions/'
 
 <style>
 
-h2 {
+#subscriptions h2 {
   display: inline-block;
   margin: 0;
   margin-right: 1rem;
   font-size: 2em;
   font-weight: 100;
 }
-#price {
+#subscriptions #price {
   display: inline-block;
   margin: 0;
 }
-#content {
+#subscriptions #content {
   display: grid;
   align-items: start;
-  padding: 8rem 0 3rem 0 !important;
 }
 #info {
   display: grid;
   align-items: center;
   grid-template-columns: auto auto 1fr;
 }
-.danger {
+#subscriptions .danger {
   justify-self: end;
 }
 
@@ -39,7 +38,7 @@ h2 {
     <br /> with just a click
   </div>
 </div>
-<div class="container">
+<div class="container" id="subscriptions">
   <div id="header">
     <h1>My Subsciptions</h1>
     <div class="separator"></div>

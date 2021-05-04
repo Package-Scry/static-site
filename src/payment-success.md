@@ -6,21 +6,20 @@ permalink: 'success/'
 
 <style>
 
-h2 {
+#payment-success h2 {
   display: inline-block;
   margin: 0;
   margin-right: 1rem;
   font-size: 2em;
   font-weight: 100;
 }
-#price {
+#payment-success #price {
   display: inline-block;
   margin: 0;
 }
-#content {
+#payment-success #content {
   display: grid;
   align-items: start;
-  padding: 8rem 0 3rem 0 !important;
   justify-items: center;
 }
 
@@ -32,7 +31,7 @@ h2 {
     <br /> with just a click
   </div>
 </div>
-<div class="container">
+<div class="container" id="payment-success">
   <div id="header">
     <h1>Payment successful</h1>
     <div class="separator"></div>
