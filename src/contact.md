@@ -22,6 +22,12 @@ permalink: 'contact-us/'
   display: flex;
   border: none;
 }
+@media screen and (max-width: 1200px) {
+#contact #contact-radios {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+}
 #contact #contact-radios input {
   align-self: center;
   appearance: none;
