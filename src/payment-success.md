@@ -6,13 +6,6 @@ permalink: 'success/'
 
 <style>
 
-#payment-success h2 {
-  display: inline-block;
-  margin: 0;
-  margin-right: 1rem;
-  font-size: 2em;
-  font-weight: 100;
-}
 #payment-success #price {
   display: inline-block;
   margin: 0;
