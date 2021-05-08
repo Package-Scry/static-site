@@ -23,18 +23,18 @@
   font-size: 1.5em;
   text-align: center;
 }
-#social-header {
+#third-view-follows > #header {
   font-family: Bitter;
   grid-column: 1 / span 3;
   filter: drop-shadow(var(--default-shadow));
 }
-.social-icon {
+#third-view-follows > .icon {
   justify-self: center;
 }
-.social-icon img {
+#third-view-follows > .icon img {
   height: 35px;
 }
-.social-icon img:hover {
+#third-view-follows > .icon img:hover {
   cursor: pointer;
 }
 #third-view-separator {
