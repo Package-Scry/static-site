@@ -8,7 +8,7 @@
 }
 #second-view-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 11fr 19fr;
   margin: 0 auto;
   width: 1200px;
 }
