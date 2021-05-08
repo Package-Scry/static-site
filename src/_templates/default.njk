@@ -144,6 +144,27 @@
         text-decoration: underline;
         cursor: pointer;
       }
+      #menu-login .dropdown {
+        display: none;
+        padding-top: 1rem;
+      }
+      #menu-login .dropdown-item {
+        display: block;
+        background: #385760;
+        padding: .5rem;
+        margin-top: 2px;
+        border: 1px solid #61828D;
+        text-shadow: var(--default-shadow)
+      }
+      #menu-login .dropdown-item:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      #menu-login:hover .dropdown {
+        display: block;
+        position: absolute;
+        right: 8px;
+      }
       #mobile-menu {
         display: none;
       }
@@ -243,7 +264,13 @@
         <li><a href="/blog">Blog</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/download">Download</a></li>
-        <li><a href="/login">Login</a></li>
+        <li id="menu-login">
+          <a href="/login">My account</a>
+          <div class="dropdown">
+            <a class="dropdown-item" href="/subscriptions">My subscriptions</a>
+            <a class="dropdown-item" href="/logout">Logout</a>
+          </div>
+        </li>
       </ul>
     </nav>
 
