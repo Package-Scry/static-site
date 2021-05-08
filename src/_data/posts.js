@@ -2,9 +2,14 @@ const { default: axios } = require('axios');
 
 module.exports = async () => {
   try {
-    const res = await axios.get('http://localhost:1337/posts');
+    const res = await axios.get('https://ps-strapi.herokuapp.com/posts');
+    const posts = res.data.map((post, i) => ({
+      ...post,
+      intro: `${post.text.slice(0, 500)}${post.text.length > 500 ? "..." : ""}`,
+      createdAt: new Date(post.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    }))
 
-    return res.data;
+    return [...posts];
   } catch (error) {
     console.error(error);
   }
