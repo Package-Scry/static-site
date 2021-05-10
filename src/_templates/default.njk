@@ -130,7 +130,7 @@
         text-align: right;
         margin-bottom: 60px;
         font-size: 1.2em;
-        user-selection: none;
+        user-select: none;
       }
       #menu-container {
         display: inline-block;
@@ -140,7 +140,7 @@
         display: inline;
         padding: 4px 8px;
       }
-      #menu-container li:hover {
+      #menu-container li:hover .menu-item {
         text-decoration: underline;
         cursor: pointer;
       }
@@ -164,6 +164,11 @@
         display: block;
         position: absolute;
         right: 8px;
+      }
+      #menu-login #down-arrow {
+        font-size: .75em;
+        margin-left: .25rem;
+        cursor: pointer;
       }
       #mobile-menu {
         display: none;
@@ -220,6 +225,21 @@
           padding: 4px 0;
           font-size: 2em;
         }
+        #menu-login .dropdown {
+          width: 100%;
+        }
+        #menu-login:hover .dropdown {
+          position: initial;
+          right: unset;
+          width: auto;
+        }
+        #menu-login .dropdown-item {
+          display: block;
+          background: inherit;
+          padding: .5rem;
+          margin-top: 2px;
+          border: none;
+        }
       }
       #footer-menu {
         background: #0C4C5A;
@@ -266,13 +286,13 @@
     <nav>
       <div id="mobile-menu"></div>
       <ul id="menu-container">
-        <li><a href="/">Home</a></li>
-        <li><a href="/pricing">Pricing</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/download">Download</a></li>
+        <li><a class="menu-item" href="/">Home</a></li>
+        <li><a class="menu-item" href="/pricing">Pricing</a></li>
+        <li><a class="menu-item" href="/blog">Blog</a></li>
+        <li><a class="menu-item" href="/about">About</a></li>
+        <li><a class="menu-item" href="/download">Download</a></li>
         <li id="menu-login">
-          <span>My account</span><span id="down-arrow">▼</span>
+          <span class="menu-item" >My account</span><span id="down-arrow">▼</span>
           <div class="dropdown">
             <a class="dropdown-item" href="/subscriptions">My subscriptions</a>
             <a class="dropdown-item" href="/logout">Logout</a>
