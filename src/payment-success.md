@@ -18,12 +18,6 @@ permalink: 'success/'
 
 </style>
 
-<div class="logo-container">
-  <img src="/img/logo.png" />
-  <div id="slogan">Dependency management 
-    <br /> with just a click
-  </div>
-</div>
 <div class="container" id="payment-success">
   <div id="header">
     <h1>Payment successful</h1>

@@ -72,12 +72,6 @@ permalink: 'contact-us/'
 
 </style>
 
-<div class="logo-container">
-  <img src="/img/logo.png" />
-  <div id="slogan">Dependency management 
-    <br /> with just a click
-  </div>
-</div>
 <div class="container" id="contact">
   <div id="header">
     <h1>Contact us</h1>

@@ -143,12 +143,6 @@ permalink: 'pricing/'
 
 </style>
 
-<div class="logo-container">
-  <img src="/img/logo.png" />
-  <div id="slogan">Dependency management 
-    <br /> with just a click
-  </div>
-</div>
 <div id="pricing-container">
   <div id="pricing-tables">
     <div class="pricing-table">

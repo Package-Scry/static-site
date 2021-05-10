@@ -79,12 +79,6 @@ permalink: 'download/'
 
 </style>
 
-<div class="logo-container">
-  <img src="/img/logo.png" />
-  <div id="slogan">Dependency management 
-    <br /> with just a click
-  </div>
-</div>
 <div class="container" id="download">
   <div id="header">
     <h1>Download</h1>
