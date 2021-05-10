@@ -1,6 +1,6 @@
 ---
 title: Package Scry
-layout: default.njk
+layout: index.njk
 ---
 
 <div id="first-view-container">
