@@ -1,7 +1,7 @@
 ---
 title: Payment Successful
 layout: default.njk
-permalink: 'success/'
+permalink: 'payment-success/'
 ---
 
 <style>
