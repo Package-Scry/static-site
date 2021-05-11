@@ -10,7 +10,9 @@ permalink: 'login/'
 
     elButton.addEventListener("click", async e => {
       e.preventDefault()
-      const response = await fetch('https://package-scry.herokuapp.com/auth/000000')
+      const callbackPath = `/auth/github/callback/`;
+      const clientId = '3803f7a66d5342571596'
+      const response = await fetch(`https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=https://package-scry.herokuapp.com${callbackPath}000000`)
       console.log(response)
 
       const { "x-token": token } = response
