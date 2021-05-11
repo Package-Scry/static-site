@@ -10,7 +10,7 @@ permalink: 'login/'
 
     elButton.addEventListener("click", async e => {
       e.preventDefault()
-      const response = await fetch('https://package-scry.herokuapp.com/auth/000000')
+      const response = await fetch('https://package-scry.herokuapp.com/auth/000000', {mode: 'cors'})
       console.log(response)
 
       const { "x-token": token } = response
