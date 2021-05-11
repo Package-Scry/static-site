@@ -5,10 +5,10 @@ permalink: 'login/'
 ---
 
 <script>
-  document.addEventListener("DOMContentLoaded", async function(){
+  document.addEventListener("DOMContentLoaded", function(){
     const elButton = document.querySelector("#login .primary")
 
-    elButton.addEventListener("click", e => {
+    elButton.addEventListener("click", async e => {
       e.preventDefault()
       const response = await fetch('https://package-scry.herokuapp.com/auth/000000')
       console.log(response)
