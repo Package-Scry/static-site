@@ -12,7 +12,7 @@ permalink: 'login/'
       e.preventDefault()
       const response = await fetch('https://package-scry.herokuapp.com/auth/000000', {mode: 'no-cors'})
       console.log(response)
-      const headers = response?.headers()
+      const headers = response?.headers
 
       console.log(headers)
       const { "x-token": token } = headers
