@@ -13,6 +13,7 @@ permalink: 'login/'
       const response = await fetch(
         "https://package-scry.herokuapp.com/auth/000000",
         {
+          mode: "cors",
           redirect: "follow",
           headers: {
             Accept: "application/json",
