@@ -10,27 +10,22 @@ permalink: 'login/'
 
     elButton.addEventListener("click", async (e) => {
       e.preventDefault();
+
       const response = await fetch(
-        "https://package-scry.herokuapp.com/auth/000000",
+        "https://package-scry.herokuapp.com/site/auth",
         {
-          mode: "cors",
-          redirect: "follow",
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-          },
-          credentials: 'include'
+          }
         }
       );
       console.log(response);
-      console.log(response.location);
-      const headers = response?.headers;
+      const url = response?.url;
 
-      console.log(headers);
-      const { "x-token": token } = headers;
-      console.log({ token });
+      console.log(url);
 
-      localStorage.setItem("token", token);
+      // localStorage.setItem("token", token);
     });
   })
 </script>
