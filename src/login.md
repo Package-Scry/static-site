@@ -8,22 +8,28 @@ permalink: 'login/'
   document.addEventListener("DOMContentLoaded", function(){
     const elButton = document.querySelector("#login .primary")
 
-    elButton.addEventListener("click", async e => {
-      e.preventDefault()
-      const response = await fetch('https://package-scry.herokuapp.com/auth/000000', {mode: 'no-cors', redirect: 'follow',    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    }})
-      console.log(response)
-      console.log(response.location)
-      const headers = response?.headers
+    elButton.addEventListener("click", async (e) => {
+      e.preventDefault();
+      const response = await fetch(
+        "https://package-scry.herokuapp.com/auth/000000",
+        {
+          redirect: "follow",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log(response);
+      console.log(response.location);
+      const headers = response?.headers;
 
-      console.log(headers)
-      const { "x-token": token } = headers
-      console.log({token})
+      console.log(headers);
+      const { "x-token": token } = headers;
+      console.log({ token });
 
-      localStorage.setItem("token", token)
-    })
+      localStorage.setItem("token", token);
+    });
   })
 </script>
 
