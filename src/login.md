@@ -19,6 +19,7 @@ permalink: 'login/'
             Accept: "application/json",
             "Content-Type": "application/json",
           },
+          credentials: 'include'
         }
       );
       console.log(response);
