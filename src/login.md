@@ -12,13 +12,16 @@ permalink: 'login/'
       e.preventDefault();
 
       const response = await fetch(
-        "https://package-scry.herokuapp.com/test/redirect",
+        "https://package-scry.herokuapp.com/site/redirect",
         {
-          redirect: 'follow'
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          }
         }
       );
-      
-      console.log(response);
+      const data = await response.json()
+      console.log(data);
     });
   })
 </script>
