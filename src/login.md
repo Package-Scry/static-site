@@ -20,13 +20,8 @@ permalink: 'login/'
           }
         }
       );
-      const data = await response.json()
-      console.log(data);
-      const url = data?.oauthUrl;
-
-      console.log(url);
       
-      if (url) window.location.href = url;
+      console.log(response);
     });
   })
 </script>
