@@ -5,6 +5,6 @@
     Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "/site*"
-  to = "https://package-scry.herokuapp.com/:splat"
+  from = "/site/redirect"
+  to = "https://package-scry.herokuapp.com/site/redirect"
   status = 200
