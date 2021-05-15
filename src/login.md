@@ -14,10 +14,6 @@ permalink: 'login/'
       const response = await fetch(
         "https://package-scry.herokuapp.com/test/redirect",
         {
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          }, 
           redirect: 'follow'
         }
       );
