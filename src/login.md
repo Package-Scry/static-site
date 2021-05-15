@@ -12,7 +12,7 @@ permalink: 'login/'
       e.preventDefault();
 
       const response = await fetch(
-        "site/redirect",
+        "https://www.packagescry.com/site/redirect",
         {
           headers: {
             Accept: "application/json",
