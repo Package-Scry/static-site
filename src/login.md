@@ -17,7 +17,8 @@ permalink: 'login/'
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-          }
+          }, 
+          redirect: 'follow'
         }
       );
       
