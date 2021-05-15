@@ -20,8 +20,9 @@ permalink: 'login/'
           }
         }
       );
-      console.log(response);
-      const url = response?.oauthUrl;
+      const data = response.json()
+      console.log(data);
+      const url = data?.oauthUrl;
 
       console.log(url);
       
