@@ -1,1 +1,1 @@
-Access-Control-Allow-Origin = "https://package-scry.herokuapp.com/*"
+Access-Control-Allow-Origin = "*"
