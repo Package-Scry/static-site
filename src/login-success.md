@@ -17,7 +17,8 @@ permalink: 'login-success/'
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-          }
+          },
+          credentials: "include"
         }
       );
       console.log(response);
