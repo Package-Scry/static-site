@@ -21,7 +21,7 @@ permalink: 'login/'
         }
       );
       console.log(response);
-      const url = response?.url;
+      const url = response?.oauthUrl;
 
       console.log(url);
       
