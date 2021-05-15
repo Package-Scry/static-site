@@ -22,7 +22,7 @@ permalink: 'login/'
       );
       const data = await response.json()
       console.log(data);
-      const url = response?.oauthUrl;
+      const url = data?.oauthUrl;
 
       console.log(url);
       
