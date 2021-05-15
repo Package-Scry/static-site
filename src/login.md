@@ -12,7 +12,7 @@ permalink: 'login/'
       e.preventDefault();
 
       const response = await fetch(
-        "https://package-scry.herokuapp.com/site/auth",
+        "https://package-scry.herokuapp.com/site/redirect",
         {
           headers: {
             Accept: "application/json",
@@ -24,8 +24,8 @@ permalink: 'login/'
       const url = response?.url;
 
       console.log(url);
-
-      // localStorage.setItem("token", token);
+      
+      if (url) window.location.href = url;
     });
   })
 </script>
