@@ -25,4 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(elNav.className);
     elNav.className = elNav.className?.includes("active") ? "" : "active";
   });
+
+  const response = await fetch("https://package-scry.herokuapp.com/user", {
+    credentials: "include",
+  });
+
+  const data = await response.json();
+
+  console.log(data)
 });
