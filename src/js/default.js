@@ -32,5 +32,12 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   const data = await response.json();
 
+  const { user } = data
+
+  const elMenuItem = document.querySelector("#menu-login");
+  const userMenuItem = `<li id="menu-login"><span class="menu-item" >My account</span><span id="down-arrow">▼</span><div class="dropdown"><a class="dropdown-item" href="/subscriptions">My subscriptions</a><a class="dropdown-item" href="/logout">Logout</a></div></li>`;
+  
+   if (user) elMenuItem.outerHTML = userMenuItem
+  
   console.log(data)
 });
