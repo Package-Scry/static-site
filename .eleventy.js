@@ -3,6 +3,7 @@ const ErrorOverlay = require("eleventy-plugin-error-overlay");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setTemplateFormats(["md", "css"]);
+  eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPlugin(ErrorOverlay);
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
