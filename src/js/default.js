@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const id = user?.id
 
   const elMenuItem = document.querySelector("#menu-login");
-  const userMenuItem = `<li id="menu-login"><span class="menu-item" >My account</span><span id="down-arrow">▼</span><div class="dropdown"><a class="dropdown-item" href="/subscriptions">My subscriptions</a><a class="dropdown-item" href="/logout">Logout</a></div></li>`;
+  const userMenuItem = `<li id="menu-login"><span class="menu-item" >My account</span><span id="down-arrow">▼</span><div class="dropdown"><a class="dropdown-item" href="/subscriptions">My subscriptions</a><a class="dropdown-item" href="https://package-scry.herokuapp.com/">Logout</a></div></li>`;
   
    if (id) elMenuItem.outerHTML = userMenuItem
   
