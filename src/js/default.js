@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
   const elNav = document.querySelector("nav");
   const elMobileMenu = document.querySelector("#mobile-menu");
   const elMenu = document.querySelector("#menu-container");
