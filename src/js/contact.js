@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     elContent.innerHTML =
       status === "success"
-        ? `${
-            activeType[0].toUpperCase() + activeType.slice(1)
+        ? `${activeType[0].toUpperCase() + activeType.slice(1)} ${
+            activeType === "payment" ? "issue" : ""
           } successfully sent.`
         : `There was some issue with your ${
             activeType[0].toUpperCase() + activeType.slice(1)
