@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         credentials: "include",
         headers: { "Content-Type": "application/json" },
         method: "POST",
-        body: { type: activeType, text: inputValue },
+        body: JSON.stringify({ type: activeType, text: inputValue }),
       }
     );
 
