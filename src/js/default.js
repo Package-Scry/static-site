@@ -1,3 +1,4 @@
+let isLoggedIn = null;
 document.addEventListener("DOMContentLoaded", async function () {
   const elNav = document.querySelector("nav");
   const elMobileMenu = document.querySelector("#mobile-menu");
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     elMenu.style.display === "block"
       ? (elMenu.style.display = "none")
       : (elMenu.style.display = "block");
-    console.log(elNav.className);
+
     elNav.className = elNav.className?.includes("active") ? "" : "active";
   });
 
@@ -32,13 +33,20 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   const data = await response.json();
 
-  const { user } = data
-  const id = user?.id
+  const { user } = data;
+  const id = user?.id;
 
   const elMenuItem = document.querySelector("#menu-login");
-  const userMenuItem = `<li id="menu-login"><span class="menu-item" >My account</span><span id="down-arrow">▼</span><div class="dropdown"><a class="dropdown-item" href="/subscriptions">My subscriptions</a><a class="dropdown-item" href="https://package-scry.herokuapp.com/logout">Logout</a></div></li>`;
-  
-   if (id) elMenuItem.outerHTML = userMenuItem
-  
-  console.log(data)
+  const userMenuItem = `<li id="menu-login"><span class="menu-item" >My account</span><span id="down-arrow">▼</span><div class="dropdown"><a class="dropdown-item" href="/subscriptions">My subscriptions</a><a class="dropdown-item" id="logout" href="https://package-scry.herokuapp.com/logout">Logout</a></div></li>`;
+
+  if (id) {
+    elMenuItem.outerHTML = userMenuItem;
+    isLoggedIn = true;
+
+    const elLogout = document.querySelector("#logout");
+
+    elLogout.addEventListener("click", () => {
+      isLoggedIn = false;
+    });
+  } else isLoggedIn = false;
 });
