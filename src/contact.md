@@ -4,6 +4,8 @@ layout: default.njk
 permalink: 'contact-us/'
 ---
 
+<script src="/js/contact.js"></script>
+
 <style>
 
 #contact #sub-header {
@@ -22,12 +24,14 @@ permalink: 'contact-us/'
   display: flex;
   border: none;
 }
+
 @media screen and (max-width: 1200px) {
-#contact #contact-radios {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  #contact #contact-radios {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
 }
-}
+
 #contact #contact-radios input {
   align-self: center;
   appearance: none;
@@ -51,7 +55,7 @@ permalink: 'contact-us/'
   font-size: 1.75em;
   margin-right: 2rem;
   padding-left: .5rem;
-    filter: drop-shadow(var(--default-shadow));
+  filter: drop-shadow(var(--default-shadow));
 }
 #contact #contact-radios label:last-child {
   margin-right: 0;
