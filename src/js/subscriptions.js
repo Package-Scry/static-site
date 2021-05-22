@@ -12,10 +12,16 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   if (subscription) {
     const { id, type, timeperiod, price } = subscription;
-    const infoHTML = `<h2 id="plan-name">${timeperiod} ${type} plan</h2><span id="plan-price">(${price} ${
+    const capitalizeString = (string) =>
+      string[0].toUpperCase() + string.slice(1);
+    const planName = `${capitalizeString(timeperiod)} ${capitalizeString(
+      type
+    )} Plan`;
+    const infoHTML = `<h2 id="plan-name">${planName}</h2><span id="plan-price">(${price} ${
       timeperiod === "annual" ? "per year" : "per month"
     })</span><a class="button danger" href="/cancel">Cancel Subscription</a>`;
 
-    elInfo.innerHTML = infoHTML
-  } else elInfo.innerHTML = `<div id="no-plan">You don't have any subscriptions</div>`
+    elInfo.innerHTML = infoHTML;
+  } else
+    elInfo.innerHTML = `<div id="no-plan">You don't have any subscriptions</div>`;
 });

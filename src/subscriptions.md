@@ -31,12 +31,6 @@ permalink: 'subscriptions/'
 #no-plan {
   grid-column: 1 / span 3
 }
-#plan-name::first-letter {
-  text-transform: uppercase;
-  display: grid;
-  align-items: center;
-  grid-template-columns: auto auto 1fr;
-}
 #subscriptions .danger {
   justify-self: end;
 }
