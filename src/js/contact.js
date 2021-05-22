@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   if (isLoggedIn === false)
     window.location.href = "https://www.packagescry.com/login";
 
-  console.log("asd", isLoggedIn)
-
   const elRadios = document.querySelectorAll("#contact-radios input");
   const elTextArea = document.querySelector("#contact-text");
   const elButton = document.querySelector("#contact .primary");

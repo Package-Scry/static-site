@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   if (id) {
     elMenuItem.outerHTML = userMenuItem;
     isLoggedIn = true;
-    console.log("setting logged in");
 
     const elLogout = document.querySelector("#logout");
 
@@ -50,7 +49,10 @@ document.addEventListener("DOMContentLoaded", async function () {
       isLoggedIn = false;
     });
   } else {
-    console.log("setting false");
+    const url = document.URL
+
+    if (url === "https://www.packagescry.com/contact-us/")
+      window.location.href = "https://www.packagescry.com/login";
     isLoggedIn = false;
   }
 });
