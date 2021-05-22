@@ -22,8 +22,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       "https://package-scry.herokuapp.com/post/contact",
       {
         credentials: "include",
+        headers: { "Content-Type": "application/json" },
         method: "POST",
-        body: JSON.stringify({ type: activeType, text: inputValue }),
+        body: { type: activeType, text: inputValue },
       }
     );
 
