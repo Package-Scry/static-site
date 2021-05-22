@@ -4,6 +4,8 @@ layout: default.njk
 permalink: 'subscriptions/'
 ---
 
+<script src="/js/subscriptions.js"></script>
+
 <style>
 
 #subscriptions h2 {
@@ -13,7 +15,7 @@ permalink: 'subscriptions/'
   font-size: 2em;
   font-weight: 100;
 }
-#subscriptions #price {
+#subscriptions #plan-price {
   display: inline-block;
   margin: 0;
 }
@@ -21,7 +23,16 @@ permalink: 'subscriptions/'
   display: grid;
   align-items: start;
 }
-#info {
+#plan-info {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto 1fr;
+}
+#no-plan {
+  grid-column: 1 / span 3
+}
+#plan-name::first-letter {
+  text-transform: uppercase;
   display: grid;
   align-items: center;
   grid-template-columns: auto auto 1fr;
@@ -38,10 +49,8 @@ permalink: 'subscriptions/'
     <div class="separator"></div>
   </div>
   <div id="content">
-    <div id="info">
-      <h2>Annual Pro Plan</h2>
-      <span id="price">($58.88 / year)</span>
-      <a class="button danger" href="/cancel">Cancel Subscription</a>
+    <div id="plan-info">
+      <div id="no-plan">Loading...</div>
     </div>
   </div>
   <div id="container-footer">
