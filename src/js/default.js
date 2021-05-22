@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   if (id) {
     elMenuItem.outerHTML = userMenuItem;
     isLoggedIn = true;
+    console.log("setting logged in")
 
     const elLogout = document.querySelector("#logout");
 
