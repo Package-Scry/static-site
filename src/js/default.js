@@ -42,12 +42,15 @@ document.addEventListener("DOMContentLoaded", async function () {
   if (id) {
     elMenuItem.outerHTML = userMenuItem;
     isLoggedIn = true;
-    console.log("setting logged in")
+    console.log("setting logged in");
 
     const elLogout = document.querySelector("#logout");
 
     elLogout.addEventListener("click", () => {
       isLoggedIn = false;
     });
-  } else isLoggedIn = false;
+  } else {
+    console.log("setting false");
+    isLoggedIn = false;
+  }
 });
