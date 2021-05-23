@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       elSubscribeTerms.style.color = "white";
   });
 
-  elSubscribeButton.addEventListener("click", () => {
+  elSubscribeButton.addEventListener("click", async () => {
     const isChecked = elSubscribeCheckbox.checked;
     const emailValue = elSubscribeInput.value;
 
