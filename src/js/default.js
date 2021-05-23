@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
       );
 
+      elSubscribeInput.value = ""
       const data = await response.json();
       const { status } = data;
 
