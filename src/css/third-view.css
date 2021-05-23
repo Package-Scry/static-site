@@ -72,6 +72,10 @@
 #subscribe-input:focus {
   outline: none;
 }
+#subscribe-input:invalid {
+  color: red;
+  border: 2px solid red;
+}
 #subscribe-button {
   background: #128CB4;
 }
@@ -85,6 +89,9 @@
   column-gap: 0.5em;
   align-items: center;
   text-shadow: var(--default-shadow);
+}
+#subscribe-checkbox {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
