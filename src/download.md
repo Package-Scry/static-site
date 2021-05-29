@@ -4,6 +4,8 @@ layout: default.njk
 permalink: 'download/'
 ---
 
+<script src="/js/download.js"></script>
+
 <style>
 
 #download #price {
@@ -93,14 +95,14 @@ permalink: 'download/'
         <div class="type">Mac</div>
       </div>
       <div class="separator vertical"></div>
-      <a class="button primary" href="/download/mac">Download</a>
+      <a id="mac-button" class="button primary" href="/download/mac">Download</a>
       <div class="separator"></div>
       <div class="type-grid">
         <img class="icon" src="/img/windows.png" />
         <div class="type">Windows</div>
       </div>
       <div class="separator vertical"></div>
-      <a class="button primary" href="/download/win">Download</a>
+      <a id="win-button" class="button primary" href="/download/win">Download</a>
     </div>
     
   </div>
