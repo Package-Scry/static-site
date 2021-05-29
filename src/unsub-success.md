@@ -8,7 +8,7 @@ permalink: 'unsubbed/'
 
 #unsub-success #content {
   display: grid;
-  align-items: start;
+  align-items: center;
   justify-items: center;
 }
 
@@ -16,8 +16,11 @@ permalink: 'unsubbed/'
 
 <div class="container" id="unsub-success">
   <div id="header">
-    <h1>Successfully unsubscribed</h1>
+    <h1>Newsletter</h1>
     <div class="separator"></div>
+  </div>
+  <div id="content">
+    <div>Successfully unsubscribed</div>
   </div>
   <div id="container-footer">
     <div class="separator"></div>
