@@ -29,6 +29,7 @@
   filter: drop-shadow(var(--default-shadow));
 }
 #third-view-follows > .icon {
+  display: block;
   justify-self: center;
 }
 #third-view-follows > .icon img {
