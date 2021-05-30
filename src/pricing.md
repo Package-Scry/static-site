@@ -122,6 +122,10 @@ permalink: 'pricing/'
     column-gap: 8px;
     margin: 2rem 0;
   }
+  .feature > .icon {
+    align-self: center;
+    line-height: 0;
+  }
   svg {
     max-width: 25px;
     max-height: 1em;
