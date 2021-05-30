@@ -165,16 +165,20 @@ permalink: 'pricing/'
         </li>
         <li class="feature">
           <div class="icon x">
-            <svg width="26" height="63" viewBox="0 0 26 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.176 29.848L1.296 17.272H6.096L12.72 26.968L19.296 17.272H24.048L15.168 29.848L24.528 43H19.728L12.72 32.728L5.616 43H0.864L10.176 29.848Z" fill="white"/>
+            <svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <g transform="matrix(4.0568,0,0,4.26439,1.95538,-42.6098)">
+                    <path d="M5.936,17.328L0.756,9.992L3.556,9.992L7.42,15.648L11.256,9.992L14.028,9.992L8.848,17.328L14.308,25L11.508,25L7.42,19.008L3.276,25L0.504,25L5.936,17.328Z" style="fill:white;fill-rule:nonzero;"/>
+                </g>
             </svg>
           </div>
           <div class="description">Ad-free</div>
         </li>
         <li class="feature">
           <div class="icon x">
-            <svg width="26" height="63" viewBox="0 0 26 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.176 29.848L1.296 17.272H6.096L12.72 26.968L19.296 17.272H24.048L15.168 29.848L24.528 43H19.728L12.72 32.728L5.616 43H0.864L10.176 29.848Z" fill="white"/>
+            <svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <g transform="matrix(4.0568,0,0,4.26439,1.95538,-42.6098)">
+                    <path d="M5.936,17.328L0.756,9.992L3.556,9.992L7.42,15.648L11.256,9.992L14.028,9.992L8.848,17.328L14.308,25L11.508,25L7.42,19.008L3.276,25L0.504,25L5.936,17.328Z" style="fill:white;fill-rule:nonzero;"/>
+                </g>
             </svg>
           </div>
           <div class="description">Commercial use</div>
