@@ -42,6 +42,9 @@ permalink: 'login/'
   align-items: start;
   justify-items: center;
 }
+#login .button {
+  background: #231E1B;
+}
 
 </style>
 
@@ -51,7 +54,10 @@ permalink: 'login/'
     <div class="separator"></div>
   </div>
   <div id="content">
-    <a class="button primary" href="/login">Login</a>
+    <a class="button primary" href="/login">
+      <img src="/img/github.png" alt="github" />
+      <span>Login with GitHub</span>
+    </a>
   </div>
   <div id="container-footer">
     <div class="separator"></div>
