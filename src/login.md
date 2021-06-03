@@ -44,6 +44,14 @@ permalink: 'login/'
 }
 #login .button {
   background: #231E1B;
+  padding: 0.75rem 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 1.5rem;
+}
+#login .button:hover {
+  background: #23282E;
 }
 
 </style>
