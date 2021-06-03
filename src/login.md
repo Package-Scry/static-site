@@ -53,6 +53,9 @@ permalink: 'login/'
 #login .button:hover {
   background: #23282E;
 }
+#login img {
+  width: 50px;
+}
 
 </style>
 
