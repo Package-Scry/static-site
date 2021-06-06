@@ -33,6 +33,9 @@ permalink: 'login/'
 
 <style>
 
+#login {
+  width: 600px;
+}
 #login #price {
   display: inline-block;
   margin: 0;
