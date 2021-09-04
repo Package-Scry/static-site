@@ -1,8 +1,29 @@
 ---
 title: Sign up
 layout: default.njk
-permalink: 'sign-up/'
+permalink: "sign-up/"
 ---
+
+<script src="https://www.paypal.com/sdk/js?client-id=ASbxOob5Bj45ZSQdBNOcwtMOoCWbNQE31RYWp4oVh7rHuHyUSLjkHSCq4tl5C3cO3R7vVjCWY_jw8Ztp&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+    style: {
+        shape: 'rect',
+        color: 'gold',
+        layout: 'vertical',
+        label: 'subscribe'
+    },
+    createSubscription: function(data, actions) {
+      return actions.subscription.create({
+        /* Creates the subscription */
+        plan_id: 'P-0850211716571061WMEZTOWA'
+      });
+    },
+    onApprove: function(data, actions) {
+      alert(`ASD  ${data.subscriptionID}`); // You can add optional success message for the subscriber here
+    }
+  }).render('#paypal-button-container-P-0850211716571061WMEZTOWA'); // Renders the PayPal button
+</script>
 
 <style>
   #pricing-container {
@@ -113,7 +134,7 @@ permalink: 'sign-up/'
         <div class="separator"></div>
         <h2 class="total-price">Total: $6.99 per month</h2>
       </div>
-      <a class="button primary pricing-button" href="/paypallink">Pay with PayPal</a>
+      <div id="paypal-button-container-P-0850211716571061WMEZTOWA"></div>
     </div>
     <div class="pricing-table" id="annual">
       <h1 class="header">Annual</h1>
@@ -124,7 +145,7 @@ permalink: 'sign-up/'
         <div class="separator"></div>
         <h2 class="total-price">Total: $59.88 per year</h2>
       </div>
-      <a class="button primary pricing-button" href="/paypallink">Pay with PayPal</a>
+      <div id="paypal-button-container-P-0850211716571061WMEZTOWA"></div>
     </div>
   </div>
 </div>
