@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       style: {
         shape: "rect",
         color: "gold",
-        layout: "vertical",
+        layout: "horizontal",
         label: "subscribe",
       },
       createSubscription: function (data, actions) {
