@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  paypal_sdk
+  paypal
     .Buttons({
       style: {
         shape: "rect",

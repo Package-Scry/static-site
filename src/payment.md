@@ -4,7 +4,7 @@ layout: default.njk
 permalink: "sign-up/"
 ---
 
-<script src="https://www.paypal.com/sdk/js?client-id=ASbxOob5Bj45ZSQdBNOcwtMOoCWbNQE31RYWp4oVh7rHuHyUSLjkHSCq4tl5C3cO3R7vVjCWY_jw8Ztp&vault=true&intent=subscription" data-sdk-integration-source="button-factory" data-namespace="paypal_sdk"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=ASbxOob5Bj45ZSQdBNOcwtMOoCWbNQE31RYWp4oVh7rHuHyUSLjkHSCq4tl5C3cO3R7vVjCWY_jw8Ztp&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
 
 <style>
   #pricing-container {
