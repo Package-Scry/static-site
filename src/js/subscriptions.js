@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
+  console.log("paypal");
+  console.log(paypal);
   paypal
     .Buttons({
       style: {
