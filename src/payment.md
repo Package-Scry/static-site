@@ -4,6 +4,8 @@ layout: default.njk
 permalink: "sign-up/"
 ---
 
+<script src="https://www.paypal.com/sdk/js?client-id=ASbxOob5Bj45ZSQdBNOcwtMOoCWbNQE31RYWp4oVh7rHuHyUSLjkHSCq4tl5C3cO3R7vVjCWY_jw8Ztp&vault=true&intent=subscription" data-sdk-integration-source="button-factory" data-namespace="paypal_sdk"></script>
+
 <style>
   #pricing-container {
     width: 1200px;
@@ -103,27 +105,6 @@ permalink: "sign-up/"
 </style>
 
 <div id="pricing-container">
-
-<script src="https://www.paypal.com/sdk/js?client-id=ASbxOob5Bj45ZSQdBNOcwtMOoCWbNQE31RYWp4oVh7rHuHyUSLjkHSCq4tl5C3cO3R7vVjCWY_jw8Ztp&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-    style: {
-        shape: 'rect',
-        color: 'gold',
-        layout: 'vertical',
-        label: 'subscribe'
-    },
-    createSubscription: function(data, actions) {
-      return actions.subscription.create({
-        /* Creates the subscription */
-        plan_id: 'P-0850211716571061WMEZTOWA'
-      });
-    },
-    onApprove: function(data, actions) {
-      alert(`ASD  ${data.subscriptionID}`); // You can add optional success message for the subscriber here
-    }
-  }).render('#paypal-button-container-P-0850211716571061WMEZTOWA'); // Renders the PayPal button
-</script>
   <div id="pricing-tables">
     <div class="pricing-table">
       <h1 class="header">Monthly</h1>
