@@ -4,7 +4,7 @@ layout: default.njk
 permalink: "sign-up/"
 ---
 
-<script src="https://www.paypal.com/sdk/js?client-id=ASbxOob5Bj45ZSQdBNOcwtMOoCWbNQE31RYWp4oVh7rHuHyUSLjkHSCq4tl5C3cO3R7vVjCWY_jw8Ztp&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AXYpRpdZCbLhQCwF3PG_RbZaXhhQGLldyZgwbhaQsSLaCdGmdWakNWMK-9sPI8xTJRW6YzXGdAWT-xIe&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
 
 <script src="/js/paypal.js"></script>
 <style>
@@ -116,7 +116,7 @@ permalink: "sign-up/"
         <div class="separator"></div>
         <h2 class="total-price">Total: $6.99 per month</h2>
       </div>
-      <div id="paypal-button-container-P-0850211716571061WMEZTOWA"></div>
+      <div id="paypal-button-container-P-997293991G0878045MH2VTKY"></div>
     </div>
     <div class="pricing-table" id="annual">
       <h1 class="header">Annual</h1>
@@ -127,7 +127,7 @@ permalink: "sign-up/"
         <div class="separator"></div>
         <h2 class="total-price">Total: $59.88 per year</h2>
       </div>
-      <div id="paypal-button-container-P-0850211716571061WMEZTOWA"></div>
+      <div id="paypal-button-container-P-997293991G0878045MH2VTKY"></div>
     </div>
   </div>
 </div>
