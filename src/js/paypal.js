@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", async function () {
       createSubscription: function (data, actions) {
         return actions.subscription.create({
           /* Creates the subscription */
-          plan_id: "P-997293991G0878045MH2VTKY",
+          plan_id: "P-0MM96375AE299090JMH2V2WI",
         });
       },
       onApprove: function (data, actions) {
         alert(`ASD  ${data.subscriptionID}`); // You can add optional success message for the subscriber here
       },
     })
-    .render("#paypal-button-container-P-997293991G0878045MH2VTKY"); // Renders the PayPal button
+    .render("#paypal-button-container-P-0MM96375AE299090JMH2V2WI"); // Renders the PayPal button
 });
