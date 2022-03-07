@@ -116,7 +116,7 @@ permalink: "sign-up/"
         <div class="separator"></div>
         <h2 class="total-price">Total: $6.99 per month</h2>
       </div>
-      <div id="paypal-button-container-P-9AB69332AX688783WMISSPMY"></div>
+      <div id="paypal-button-container-P-9SD98285EY942860PMITGWFQ"></div>
     </div>
     <div class="pricing-table" id="annual">
       <h1 class="header">Annual</h1>
@@ -127,7 +127,7 @@ permalink: "sign-up/"
         <div class="separator"></div>
         <h2 class="total-price">Total: $59.88 per year</h2>
       </div>
-      <div id="paypal-button-container-P-9AB69332AX688783WMISSPMY"></div>
+      <div id="paypal-button-container-P-9SD98285EY942860PMITGWFQ"></div>
     </div>
   </div>
 </div>
