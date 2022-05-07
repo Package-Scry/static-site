@@ -1,7 +1,7 @@
 ---
 title: Login
 layout: default.njk
-permalink: 'login/'
+permalink: "login/"
 ---
 
 <script>
@@ -12,7 +12,7 @@ permalink: 'login/'
       e.preventDefault();
 
       const response = await fetch(
-        "https://package-scry.herokuapp.com/site/redirect",
+        "https://ps-auth.netlify.app/site/redirect",
         {
           headers: {
             Accept: "application/json",

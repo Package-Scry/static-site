@@ -1,7 +1,7 @@
 ---
 title: Login Success
 layout: default.njk
-permalink: 'login-success/'
+permalink: "login-success/"
 ---
 
 <script>
@@ -12,7 +12,7 @@ permalink: 'login-success/'
       e.preventDefault();
 
       const response = await fetch(
-        "https://package-scry.herokuapp.com/site/check",
+        "https://ps-auth.netlify.app/site/check",
         {
           headers: {
             Accept: "application/json",

@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  const elMacButton = document.querySelector("#mac-button");
-  const elWinButton = document.querySelector("#win-button");
+  const elMacButton = document.querySelector("#mac-button")
+  const elWinButton = document.querySelector("#win-button")
 
-  const response = await fetch("https://package-scry.herokuapp.com/latest");
-  const data = await response.json();
+  const response = await fetch("https://ps-auth.netlify.app/latest")
+  const data = await response.json()
 
-  if (!data) return;
+  if (!data) return
 
   const {
     url: { mac },
-  } = data;
+  } = data
 
-  elMacButton.setAttribute("href", mac);
-});
+  elMacButton.setAttribute("href", mac)
+})

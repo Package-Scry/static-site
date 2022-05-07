@@ -1,40 +1,37 @@
 document.addEventListener("DOMContentLoaded", async function () {
   if (isLoggedIn === false)
-    window.location.href = "https://www.packagescry.com/login";
+    window.location.href = "https://www.packagescry.com/login"
 
-  const elRadios = document.querySelectorAll("#contact-radios input");
-  const elTextArea = document.querySelector("#contact-text");
-  const elButton = document.querySelector("#contact .primary");
-  let activeType = "feedback";
-  let inputValue = "";
+  const elRadios = document.querySelectorAll("#contact-radios input")
+  const elTextArea = document.querySelector("#contact-text")
+  const elButton = document.querySelector("#contact .primary")
+  let activeType = "feedback"
+  let inputValue = ""
 
   elRadios.forEach((elRadio) => {
     elRadio.addEventListener("change", (e) => {
-      activeType = e.target.value;
-    });
-  });
+      activeType = e.target.value
+    })
+  })
 
   elTextArea.addEventListener("change", (e) => {
-    inputValue = e.target.value;
-  });
+    inputValue = e.target.value
+  })
 
   elButton.addEventListener("click", async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const response = await fetch(
-      "https://package-scry.herokuapp.com/post/contact",
-      {
-        credentials: "include",
-        headers: { "Content-Type": "application/json" },
-        method: "POST",
-        body: JSON.stringify({ type: activeType, text: inputValue }),
-      }
-    );
+    const response = await fetch("https://ps-auth.netlify.app/post/contact", {
+      credentials: "include",
+      headers: { "Content-Type": "application/json" },
+      method: "POST",
+      body: JSON.stringify({ type: activeType, text: inputValue }),
+    })
 
-    const data = await response.json();
-    const { status } = data;
+    const data = await response.json()
+    const { status } = data
 
-    elContent = document.querySelector("#content");
+    elContent = document.querySelector("#content")
 
     elContent.innerHTML =
       status === "success"
@@ -43,6 +40,6 @@ document.addEventListener("DOMContentLoaded", async function () {
           } successfully sent.`
         : `There was some issue with your ${
             activeType[0].toUpperCase() + activeType.slice(1)
-          }`;
-  });
-});
+          }`
+  })
+})
