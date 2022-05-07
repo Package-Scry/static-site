@@ -12,7 +12,7 @@ permalink: "login/"
       e.preventDefault();
 
       const response = await fetch(
-        "https://ps-auth.netlify.app/site/redirect",
+        "https://package-scry.onrender.com/site/redirect",
         {
           headers: {
             Accept: "application/json",

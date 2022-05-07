@@ -12,7 +12,7 @@ permalink: "login-success/"
       e.preventDefault();
 
       const response = await fetch(
-        "https://ps-auth.netlify.app/site/check",
+        "https://package-scry.onrender.com/site/check",
         {
           headers: {
             Accept: "application/json",

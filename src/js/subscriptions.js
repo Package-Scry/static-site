@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  const response = await fetch("https://ps-auth.netlify.app/subscriptions", {
-    credentials: "include",
-  })
+  const response = await fetch(
+    "https://package-scry.onrender.com/subscriptions",
+    {
+      credentials: "include",
+    }
+  )
 
   const data = await response.json()
   const { subscription } = data

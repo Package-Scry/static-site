@@ -21,12 +21,15 @@ document.addEventListener("DOMContentLoaded", async function () {
   elButton.addEventListener("click", async (e) => {
     e.preventDefault()
 
-    const response = await fetch("https://ps-auth.netlify.app/post/contact", {
-      credentials: "include",
-      headers: { "Content-Type": "application/json" },
-      method: "POST",
-      body: JSON.stringify({ type: activeType, text: inputValue }),
-    })
+    const response = await fetch(
+      "https://package-scry.onrender.com/post/contact",
+      {
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        method: "POST",
+        body: JSON.stringify({ type: activeType, text: inputValue }),
+      }
+    )
 
     const data = await response.json()
     const { status } = data
