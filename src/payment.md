@@ -1,7 +1,7 @@
 ---
-title: Sign up
+title: Payment
 layout: default.njk
-permalink: "sign-up/"
+permalink: "payment/"
 ---
 
 <style>
