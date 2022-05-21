@@ -9,8 +9,8 @@ permalink: "sign-up/"
     const elButtonMonthly = document.querySelector(".button-monthly")
     const elButtonAnnual = document.querySelector(".button-annual")
 
-    elButtonMonthly.addEventListener("click", localStorage.setItem("plan-period", "monthly"))
-    elButtonAnnual.addEventListener("click", localStorage.setItem("plan-period", "annual"))
+    elButtonMonthly.addEventListener("click", () => localStorage.setItem("plan-period", "monthly"))
+    elButtonAnnual.addEventListener("click", () => localStorage.setItem("plan-period", "annual"))
   })
 </script>
 
