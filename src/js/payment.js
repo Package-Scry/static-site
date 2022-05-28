@@ -10,26 +10,45 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   const period = localStorage.getItem("plan-period")
 
-  const elEmail = document.querySelector("#billing-email")
-  const elFullname = document.querySelector("#billing-fullname")
-  const elAddress = document.querySelector("#billing-address")
-  const elCountry = document.querySelector("#billing-country")
+  const INPUTS = ["email", "fullname", "address", "country"]
+  const elInputs = INPUTS.map((input) =>
+    document.querySelector(`#billing-${input}`)
+  )
+  const elErrors = INPUTS.map((input) =>
+    document.querySelector(`#error-${input}`)
+  )
 
-  elEmail.addEventListener("blur", (e) => {
-    if (!validateEmail(elEmail.value)) elEmail.style.color = "red"
+  elInputs[0].addEventListener("blur", (e) => {
+    if (!validateEmail(elInputs[0].value)) elInputs[0].style.color = "red"
   })
-  elEmail.addEventListener("keyup", (e) => {
-    if (validateEmail(elEmail.value)) elEmail.style.color = "black"
+  elInputs[0].addEventListener("keyup", (e) => {
+    if (validateEmail(elInputs[0].value)) elInputs[0].style.color = "black"
   })
 
+  elInputs.map((elInput, i) => {
+    elInput.addEventListener(
+      "keyup",
+      (e) => (elErrors[i].style.display = "none")
+    )
+  })
   elSubmitButton.addEventListener("click", async (e) => {
     e.preventDefault()
 
+    elInputs.map((elInput, i) => {
+      if (!elInput.value) {
+        elErrors[i].style.display = "block"
+      }
+    })
+
+    const hasMissingField = elInputs.some((elInput) => !elInput.value)
+
+    if (hasMissingField || !validateEmail(elInputs[0].value)) return
+
     const input = {
-      email: elEmail.value,
-      fullname: elFullname.value,
-      address: elAddress.value,
-      country: elCountry.value,
+      email: elInputs[0].value,
+      fullname: elInputs[1].value,
+      address: elInputs[2].value,
+      country: elInputs[3].value,
       period,
     }
 

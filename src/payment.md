@@ -42,6 +42,11 @@ permalink: "payment/"
     padding: 0.5em 1em;
   }
 
+  .error-text {
+    display: none;
+    color: red;
+  }
+
   .billing-button {
     margin: 0 auto;
   }
@@ -65,12 +70,15 @@ permalink: "payment/"
   </div>
   <form id="content" class="billing-form">
     <label email="country">Email</label>   
-    <input id="billing-email" class="billing-input" type="email" name="email">
-    <label for="fullname">Name on card</label>   
-    <input id="billing-fullname" class="billing-input" class="fname" type="text" name="fullname">
-    <label for="address">Billing address</label>   
-    <input id="billing-address" class="billing-input" type="text" name="address">
-    <label for="country">Country</label>    
+    <div class="error-text" id="error-email">This field is required</div>
+    <input id="billing-email" class="billing-input" type="email" name="email" required="required">
+    <label for="fullname">Name on card</label>
+    <div class="error-text" id="error-fullname">This field is required</div>
+    <input id="billing-fullname" class="billing-input" class="fname" type="text" name="fullname" required="required">
+    <label for="address">Billing address</label>
+    <div class="error-text"  id="error-address">This field is required</div>
+    <input id="billing-address" class="billing-input" type="text" name="address" required="required">
+    <label for="country">Country</label> 
       <select class="billing-select" id="billing-country" name="country" class="form-control">
         <option value="Afghanistan">Afghanistan</option>
         <option value="Åland Islands">Åland Islands</option>
