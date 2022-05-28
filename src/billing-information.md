@@ -1,12 +1,12 @@
 ---
-title: Payment
+title: Billing information
 layout: default.njk
-permalink: "payment/"
+permalink: "billing-information/"
 ---
 
 <script src="https://js.stripe.com/v3/"></script>
 <script src="/js/stripe.js"></script>
-<script src="/js/payment.js"></script>
+<script src="/js/billingInformation.js"></script>
 
 <style>
   .billing-form {

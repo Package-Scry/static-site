@@ -123,7 +123,7 @@ permalink: "sign-up/"
         <div class="separator"></div>
         <h2 class="total-price">Total: $6.99 per month</h2>
       </div>
-      <a class="button primary button-monthly" href="/payment">Pay</a>
+      <a class="button primary button-monthly" href="/billing-information">Pay</a>
     </div>
     <div class="pricing-table" id="annual">
       <h1 class="header">Annual</h1>
@@ -134,7 +134,7 @@ permalink: "sign-up/"
         <div class="separator"></div>
         <h2 class="total-price">Total: $59.88 per year</h2>
       </div>
-      <a class="button primary button-annual" href="/payment">Pay</a>
+      <a class="button primary button-annual" href="/billing-information">Pay</a>
     </div>
   </div>
 </div>
