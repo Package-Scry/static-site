@@ -6,6 +6,9 @@ const validateEmail = (email) => {
 }
 
 document.addEventListener("DOMContentLoaded", async function () {
+  if (isLoggedIn === false)
+    window.location.href = "https://www.packagescry.com/login"
+
   const elSubmitButton = document.querySelector("#submit-info")
 
   const period = localStorage.getItem("plan-period")
@@ -23,6 +26,8 @@ document.addEventListener("DOMContentLoaded", async function () {
   })
   elInputs[0].addEventListener("keyup", (e) => {
     if (validateEmail(elInputs[0].value)) elInputs[0].style.color = "black"
+    if (isLoggedIn === false)
+      window.location.href = "https://www.packagescry.com/login"
   })
 
   elInputs.map((elInput, i) => {
@@ -52,11 +57,23 @@ document.addEventListener("DOMContentLoaded", async function () {
       period,
     }
 
-    await fetch("https://package-scry.onrender.com/post/create-subscription", {
-      credentials: "include",
-      headers: { "Content-Type": "application/json" },
-      method: "POST",
-      body: JSON.stringify({ input }),
-    })
+    try {
+      await fetch(
+        "https://package-scry.onrender.com/post/create-subscription",
+        {
+          credentials: "include",
+          headers: { "Content-Type": "application/json" },
+          method: "POST",
+          body: JSON.stringify({ input }),
+        }
+      )
+      const data = await response.json()
+
+      const { clientSecret } = data
+
+      window.location.href = `https://www.packagescry.com/payment/${clientSecret}`
+    } catch (error) {
+      alert("There was an error with your request")
+    }
   })
 })

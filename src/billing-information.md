@@ -4,8 +4,6 @@ layout: default.njk
 permalink: "billing-information/"
 ---
 
-<script src="https://js.stripe.com/v3/"></script>
-<script src="/js/stripe.js"></script>
 <script src="/js/billingInformation.js"></script>
 
 <style>
