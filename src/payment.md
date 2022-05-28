@@ -6,33 +6,7 @@ permalink: "payment/"
 
 <script src="https://js.stripe.com/v3/"></script>
 <script src="/js/stripe.js"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function(){
-    const elSubmitButton = document.querySelector("#submit-info")
-
-    const type = localStorage.getItem("plan-period")
-
-    elSubmitButton.addEventListener("click", async (e) => {
-      e.preventDefault()
-
-      const elEmail = document.querySelector("#billing-email")
-      const elFullname = document.querySelector("#billing-fullname")
-      const elAddress = document.querySelector("#billing-address")
-      const elCountry = document.querySelector("#billing-country")
-
-      const input = {
-        email: elEmail.value,
-        fullname: elFullname.value,
-        address: elAddress.value,
-        country: elCountry.value,
-      }
-
-      localStorage.setItem("billingInformation", JSON.stringify(input))
-      
-    })
-  })
-</script>
+<script src="/js/payment.js"></script>
 
 <style>
   .billing-form {
