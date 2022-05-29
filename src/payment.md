@@ -1,7 +1,7 @@
 ---
 title: Payment
 layout: default.njk
-permalink: "payment/{{ asd }}/"
+permalink: "payment/"
 ---
 
 <script src="https://js.stripe.com/v3/"></script>
