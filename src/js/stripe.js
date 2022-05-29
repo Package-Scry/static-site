@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", async function () {
+  const searchParams = new URL(document.location).searchParams
+  const clientSecret = searchParams.get("clientSecret")
+  console.log({ clientSecret })
+
   const stripe = Stripe(
     "pk_test_51KsYyOEbki2GiZihyyYL0uUx078EH5PKBT8x6FHKZfEpbM4jaFctMRO7MooVsYFKeQq73kzu8GBZXihSzX0A0ycf00pO7izHP1"
   )
   const options = {
-    clientSecret: "{{CLIENT_SECRET}}",
+    clientSecret,
     // Fully customizable with appearance API.
     appearance: {
       /*...*/
@@ -13,5 +17,5 @@ document.addEventListener("DOMContentLoaded", async function () {
   const elements = stripe.elements(options)
   // Create and mount the Payment Element
   const paymentElement = elements.create("payment")
-  paymentElement.mount("#payment-element")
+  paymentElement.mount("#payment-container")
 })
