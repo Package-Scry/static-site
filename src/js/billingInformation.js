@@ -59,7 +59,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     try {
-      await fetch(
+      console.log("here")
+      const response = await fetch(
         "https://package-scry.onrender.com/post/create-subscription",
         {
           credentials: "include",
@@ -68,7 +69,9 @@ document.addEventListener("DOMContentLoaded", async function () {
           body: JSON.stringify({ billingDetails }),
         }
       )
+      console.log("there")
       const data = await response.json()
+      console.log(data)
 
       const { clientSecret } = data
 
