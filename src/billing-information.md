@@ -73,6 +73,9 @@ permalink: "billing-information/"
     <label for="fullname">Name on card</label>
     <div class="error-text" id="error-fullname">This field is required</div>
     <input id="billing-fullname" class="billing-input" class="fname" type="text" name="fullname" required="required">
+    <label for="city">City</label>
+    <div class="error-text"  id="error-city">This field is required</div>
+    <input id="billing-city" class="billing-input" type="text" name="city" required="required">
     <label for="address">Billing address</label>
     <div class="error-text"  id="error-address">This field is required</div>
     <input id="billing-address" class="billing-input" type="text" name="address" required="required">

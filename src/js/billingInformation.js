@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   const period = localStorage.getItem("plan-period")
 
-  const INPUTS = ["email", "fullname", "address", "country"]
+  const INPUTS = ["email", "fullname", "city", "address", "country"]
   const elInputs = INPUTS.map((input) =>
     document.querySelector(`#billing-${input}`)
   )
@@ -49,11 +49,12 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     if (hasMissingField || !validateEmail(elInputs[0].value)) return
 
-    const input = {
+    const billingDetails = {
       email: elInputs[0].value,
-      fullname: elInputs[1].value,
-      address: elInputs[2].value,
-      country: elInputs[3].value,
+      name: elInputs[1].value,
+      city: elInputs[2].value,
+      address: elInputs[3].value,
+      country: elInputs[4].value,
       period,
     }
 
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           credentials: "include",
           headers: { "Content-Type": "application/json" },
           method: "POST",
-          body: JSON.stringify({ input }),
+          body: JSON.stringify({ billingDetails }),
         }
       )
       const data = await response.json()
