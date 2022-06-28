@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       const { clientSecret } = data
 
-      window.location.href = `https://www.packagescry.com/payment/?clientSecret=${clientSecret}`
+      // window.location.href = `https://www.packagescry.com/payment/?clientSecret=${clientSecret}`
     } catch (error) {
       alert("There was an error with your request")
     }
