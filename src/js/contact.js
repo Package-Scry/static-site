@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     e.preventDefault()
 
     const response = await fetch(
-      "https://package-scry.onrender.com/post/contact",
+      "https://package-scry.herokuapp.com/post/contact",
       {
         credentials: "include",
         headers: { "Content-Type": "application/json" },

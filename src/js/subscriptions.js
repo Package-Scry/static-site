@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
   const response = await fetch(
-    "https://package-scry.onrender.com/subscriptions",
+    "https://package-scry.herokuapp.com/subscriptions",
     {
       credentials: "include",
     }

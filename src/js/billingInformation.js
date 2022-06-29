@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     try {
       console.log("here")
       const response = await fetch(
-        "https://package-scry.onrender.com/post/create-subscription",
+        "https://package-scry.herokuapp.com/post/create-subscription",
         {
           credentials: "include",
           headers: { "Content-Type": "application/json" },
