@@ -52,9 +52,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     const billingDetails = {
       email: elInputs[0].value,
       name: elInputs[1].value,
-      city: elInputs[2].value,
-      line1: elInputs[3].value,
-      country: elInputs[4].value,
+      address: {
+        city: elInputs[2].value,
+        line1: elInputs[3].value,
+        country: elInputs[4].value,
+      },
       period,
     }
 
