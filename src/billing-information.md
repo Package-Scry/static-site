@@ -76,9 +76,9 @@ permalink: "billing-information/"
     <label for="city">City</label>
     <div class="error-text"  id="error-city">This field is required</div>
     <input id="billing-city" class="billing-input" type="text" name="city" required="required">
-    <label for="address">Billing address</label>
-    <div class="error-text"  id="error-address">This field is required</div>
-    <input id="billing-address" class="billing-input" type="text" name="address" required="required">
+    <label for="line1">Billing address</label>
+    <div class="error-text"  id="error-line1">This field is required</div>
+    <input id="billing-line1" class="billing-input" type="text" name="line1" required="required">
     <label for="country">Country</label> 
       <select class="billing-select" id="billing-country" name="country" class="form-control">
         <option value="Afghanistan">Afghanistan</option>

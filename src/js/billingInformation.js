@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   const period = localStorage.getItem("plan-period")
 
-  const INPUTS = ["email", "fullname", "city", "address", "country"]
+  const INPUTS = ["email", "fullname", "city", "line1", "country"]
   const elInputs = INPUTS.map((input) =>
     document.querySelector(`#billing-${input}`)
   )
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       email: elInputs[0].value,
       name: elInputs[1].value,
       city: elInputs[2].value,
-      address: elInputs[3].value,
+      line1: elInputs[3].value,
       country: elInputs[4].value,
       period,
     }
