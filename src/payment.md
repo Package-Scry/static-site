@@ -26,6 +26,9 @@ permalink: "payment/"
     <h1>Payment</h1>
     <div class="separator"></div>
   </div>
+
+  <div id="payment-form" class="container">
+  </div>
       
   </form>
 </div>

@@ -17,10 +17,11 @@ document.addEventListener("DOMContentLoaded", async function () {
   const elements = stripe.elements(options)
   // Create and mount the Payment Element
   const paymentElement = elements.create("payment")
-  paymentElement.mount("#payment-container")
+  paymentElement.mount("#payment-form")
 
   const form = document.getElementById("payment-form")
 
+  console.log("form event")
   form.addEventListener("submit", async (event) => {
     event.preventDefault()
 
