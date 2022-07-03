@@ -10,14 +10,15 @@ document.addEventListener("DOMContentLoaded", async function () {
     clientSecret,
     // Fully customizable with appearance API.
     appearance: {
-      /*...*/
+      theme: "night",
+      labels: "floating",
     },
   }
   // Set up Stripe.js and Elements to use in checkout form, passing the client secret obtained in step 5
   const elements = stripe.elements(options)
   // Create and mount the Payment Element
   const paymentElement = elements.create("payment")
-  paymentElement.mount("#payment-form")
+  paymentElement.mount("#payment-element")
 
   const form = document.getElementById("payment-form")
 

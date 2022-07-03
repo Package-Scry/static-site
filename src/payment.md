@@ -8,6 +8,9 @@ permalink: "payment/"
 <script src="/js/stripe.js"></script>
 
 <style>
+  .stripe-form {
+    padding: 3.75rem 0;
+  }
 
   @media screen and (max-width: 1200px) {
 
@@ -27,8 +30,15 @@ permalink: "payment/"
     <div class="separator"></div>
   </div>
 
-  <div id="payment-form" class="container">
-  </div>
+  <form id="payment-form" class="stripe-form">
+    <div id="payment-element">
+    <!-- Elements will create form elements here -->
+    </div>
+    <button id="submit" class="button">Submit</button>
+    <div id="error-message">
+      <!-- Display error message to your customers here -->
+    </div>
+  </form>
       
   </form>
 </div>
