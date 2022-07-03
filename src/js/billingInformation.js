@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     try {
-      console.log("here")
       const response = await fetch(
         "https://package-scry.herokuapp.com/post/create-subscription",
         {
@@ -71,13 +70,11 @@ document.addEventListener("DOMContentLoaded", async function () {
           body: JSON.stringify({ billingDetails }),
         }
       )
-      console.log("there")
       const data = await response.json()
-      console.log(data)
 
-      const { clientSecret } = data
+      const { subscription } = data
 
-      // window.location.href = `https://www.packagescry.com/payment/?clientSecret=${clientSecret}`
+      window.location.href = `https://www.packagescry.com/payment/?clientSecret=${subscription?.clientSecret}`
     } catch (error) {
       alert("There was an error with your request")
     }
