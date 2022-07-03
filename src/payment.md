@@ -12,6 +12,15 @@ permalink: "payment/"
     padding: 3.75rem 0;
   }
 
+  #payment-submit {
+    text-decoration: none;
+    color: white;
+    font-family: Bitter;
+    margin: 2rem auto;
+    display: block;
+  }
+
+
   @media screen and (max-width: 1200px) {
 
   }
@@ -34,7 +43,7 @@ permalink: "payment/"
     <div id="payment-element">
     <!-- Elements will create form elements here -->
     </div>
-    <button id="submit" class="button">Submit</button>
+    <button id="payment-submit" class="button primary">Submit</button>
     <div id="error-message">
       <!-- Display error message to your customers here -->
     </div>
