@@ -1,8 +1,10 @@
 ---
 title: Payment Successful
 layout: default.njk
-permalink: 'payment-success/'
+permalink: "payment-success/"
 ---
+
+<script src="/js/paymentSuccess.js"></script>
 
 <style>
 
