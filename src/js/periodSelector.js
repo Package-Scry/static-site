@@ -7,12 +7,20 @@ document.addEventListener("DOMContentLoaded", async function () {
       window.location.href = "https://www.packagescry.com/login"
 
     try {
-      await fetch("https://package-scry.herokuapp.com/post/checkout", {
-        credentials: "include",
-        headers: { "Content-Type": "application/json" },
-        method: "POST",
-        body: JSON.stringify({ period }),
-      })
+      const response = await fetch(
+        "https://package-scry.herokuapp.com/post/checkout",
+        {
+          credentials: "include",
+          headers: { "Content-Type": "application/json" },
+          method: "POST",
+          body: JSON.stringify({ period }),
+        }
+      )
+
+      const data = await response.json()
+      const { checkoutURL } = data
+
+      window.location.href = checkoutURL
     } catch (error) {
       alert("There was an error with your request")
     }
