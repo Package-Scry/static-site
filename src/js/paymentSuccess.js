@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   if (isLoggedIn === false)
     window.location.href = "https://www.packagescry.com/login"
 
-  const HOST = "https://package-scry.herokuapp.com/"
+  const HOST = "https://package-scry.herokuapp.com"
 
   try {
     const response = await fetch("https://package-scry.herokuapp.com/user", {
