@@ -4,15 +4,7 @@ layout: default.njk
 permalink: "sign-up/"
 ---
 
-<script>
-  document.addEventListener("DOMContentLoaded", function(){
-    const elButtonMonthly = document.querySelector(".button-monthly")
-    const elButtonAnnual = document.querySelector(".button-annual")
-
-    elButtonMonthly.addEventListener("click", () => localStorage.setItem("plan-period", "monthly"))
-    elButtonAnnual.addEventListener("click", () => localStorage.setItem("plan-period", "annual"))
-  })
-</script>
+<script src="/js/periodSelector.js"></script>
 
 <style>
   #pricing-container {
@@ -123,7 +115,7 @@ permalink: "sign-up/"
         <div class="separator"></div>
         <h2 class="total-price">Total: $6.99 per month</h2>
       </div>
-      <a class="button primary button-monthly" href="/billing-information">Pay</a>
+      <a class="button primary button-monthly" href="/checkout">Pay</a>
     </div>
     <div class="pricing-table" id="annual">
       <h1 class="header">Annual</h1>
@@ -134,7 +126,7 @@ permalink: "sign-up/"
         <div class="separator"></div>
         <h2 class="total-price">Total: $59.88 per year</h2>
       </div>
-      <a class="button primary button-annual" href="/billing-information">Pay</a>
+      <a class="button primary button-annual" href="/checkout">Pay</a>
     </div>
   </div>
 </div>
