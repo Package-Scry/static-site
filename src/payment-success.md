@@ -4,6 +4,7 @@ layout: default.njk
 permalink: "payment-success/"
 ---
 
+<script src="${this.url("/assets/assets/socket.io.js")}"></script>
 <script src="/js/paymentSuccess.js"></script>
 
 <style>

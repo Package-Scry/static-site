@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   if (isLoggedIn === false)
     window.location.href = "https://www.packagescry.com/login"
 
-  const { default: socket } = require("socket.io-client")
-  const { io } = socket
   const HOST = "https://package-scry.herokuapp.com/"
 
   try {
