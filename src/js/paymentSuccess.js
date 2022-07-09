@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       console.log(`Socket ${socket.id} connected`)
     })
 
-    socket.on("planUpdated", () => {
+    socket.on(`planUpdated${idUser}`, () => {
       console.log("GOT EVENT TO REFRESH")
       socket.disconnect()
     })
