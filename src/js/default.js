@@ -46,7 +46,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       const elButtonSubs = document.querySelector("#button-subs")
       const elLogout = document.querySelector("#logout")
 
-      elButtonSubs.addEventListener("click", async () => {
+      elButtonSubs.addEventListener("click", async (e) => {
+        e.preventDefault()
+
         try {
           const response = await fetch(
             "https://package-scry.herokuapp.com/subscriptions",
