@@ -118,7 +118,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
     })
   } catch (e) {
-    console.log("YOLO")
     isLoggedIn = false
   }
 })
