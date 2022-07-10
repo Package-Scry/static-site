@@ -37,13 +37,33 @@ document.addEventListener("DOMContentLoaded", async function () {
     const { user } = data
     const id = user?.id
     const elMenuItem = document.querySelector("#menu-login")
-    const userMenuItem = `<li id="menu-login"><span class="menu-item" >My account</span><span id="down-arrow">▼</span><div class="dropdown"><a class="dropdown-item" href="/subscriptions">My subscriptions</a><a class="dropdown-item" id="logout" href="https://package-scry.herokuapp.com/logout">Logout</a></div></li>`
+    const userMenuItem = `<li id="menu-login"><span class="menu-item" >My account</span><span id="down-arrow">▼</span><div class="dropdown"><a class="dropdown-item" href="/subscriptions" id="button-subs">My subscriptions</a><a class="dropdown-item" id="logout" href="https://package-scry.herokuapp.com/logout">Logout</a></div></li>`
 
     if (id) {
       elMenuItem.outerHTML = userMenuItem
       isLoggedIn = true
 
+      const elButtonSubs = document.querySelector("#button-subs")
       const elLogout = document.querySelector("#logout")
+
+      elButtonSubs.addEventListener("click", async () => {
+        try {
+          const response = await fetch(
+            "https://package-scry.herokuapp.com/subscriptions",
+            {
+              credentials: "include",
+            }
+          )
+
+          const data = await response.json()
+          const { portalUrl } = data
+
+          window.location.href =
+            portalUrl ?? "https://www.packagescry.com/sign-up"
+        } catch (error) {
+          alert("There was an error with your request")
+        }
+      })
 
       elLogout.addEventListener("click", () => {
         isLoggedIn = false
