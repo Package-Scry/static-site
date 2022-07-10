@@ -21,28 +21,32 @@ document.addEventListener("DOMContentLoaded", async function () {
   elButton.addEventListener("click", async (e) => {
     e.preventDefault()
 
-    const response = await fetch(
-      "https://package-scry.herokuapp.com/post/contact",
-      {
-        credentials: "include",
-        headers: { "Content-Type": "application/json" },
-        method: "POST",
-        body: JSON.stringify({ type: activeType, text: inputValue }),
-      }
-    )
+    try {
+      const response = await fetch(
+        "https://package-scry.herokuapp.com/post/contact",
+        {
+          credentials: "include",
+          headers: { "Content-Type": "application/json" },
+          method: "POST",
+          body: JSON.stringify({ type: activeType, text: inputValue }),
+        }
+      )
 
-    const data = await response.json()
-    const { status } = data
+      const data = await response.json()
+      const { status } = data
 
-    elContent = document.querySelector("#content")
+      elContent = document.querySelector("#content")
 
-    elContent.innerHTML =
-      status === "success"
-        ? `${activeType[0].toUpperCase() + activeType.slice(1)} ${
-            activeType === "payment" ? "issue" : ""
-          } successfully sent.`
-        : `There was some issue with your ${
-            activeType[0].toUpperCase() + activeType.slice(1)
-          }`
+      elContent.innerHTML =
+        status === "success"
+          ? `${activeType[0].toUpperCase() + activeType.slice(1)} ${
+              activeType === "payment" ? "issue" : ""
+            } successfully sent.`
+          : `There was some issue with your ${
+              activeType[0].toUpperCase() + activeType.slice(1)
+            }`
+    } catch (error) {
+      alert("There was an error with your request")
+    }
   })
 })
