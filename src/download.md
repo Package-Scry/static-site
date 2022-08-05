@@ -1,7 +1,7 @@
 ---
 title: Download
 layout: default.njk
-permalink: 'download/'
+permalink: "download/"
 ---
 
 <script src="/js/download.js"></script>
@@ -16,12 +16,6 @@ permalink: 'download/'
   display: grid;
   align-items: start;
   justify-items: center;
-}
-#download h2 {
-  display: inline-block;
-  margin: 0.75rem 0 4rem 0 ;
-  font-size: 1.5em;
-  font-weight: 100;
 }
 #latest-version {
   display: inline-block;
@@ -87,7 +81,6 @@ permalink: 'download/'
     <div class="separator"></div>
   </div>
   <div id="content">
-    <h2 id="sub-header">Includes 30 days trial for all paid features</h2>
     <p id="latest-version">Latest Release: 1.0.0</p>
     <div id="download-grid">
       <div class="type-grid">
