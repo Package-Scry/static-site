@@ -8,22 +8,22 @@ document.addEventListener("DOMContentLoaded", async function () {
   let activeType = "feedback"
   let inputValue = ""
 
-  elRadios.forEach((elRadio) => {
-    elRadio.addEventListener("change", (e) => {
+  elRadios.forEach(elRadio => {
+    elRadio.addEventListener("change", e => {
       activeType = e.target.value
     })
   })
 
-  elTextArea.addEventListener("change", (e) => {
+  elTextArea.addEventListener("change", e => {
     inputValue = e.target.value
   })
 
-  elButton.addEventListener("click", async (e) => {
+  elButton.addEventListener("click", async e => {
     e.preventDefault()
 
     try {
       const response = await fetch(
-        "https://package-scry.herokuapp.com/post/contact",
+        "https://0auth-production.up.railway.app/post/contact",
         {
           credentials: "include",
           headers: { "Content-Type": "application/json" },

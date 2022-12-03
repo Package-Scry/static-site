@@ -12,7 +12,7 @@ permalink: "login-success/"
       e.preventDefault();
 
       const response = await fetch(
-        "https://package-scry.herokuapp.com/site/check",
+        "https://0auth-production.up.railway.app/site/check",
         {
           headers: {
             Accept: "application/json",

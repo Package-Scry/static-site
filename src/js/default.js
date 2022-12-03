@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   })
 
   try {
-    const response = await fetch("https://package-scry.herokuapp.com/user", {
+    const response = await fetch("https://0auth-production.up.railway.app/user", {
       credentials: "include",
     })
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const { user } = data
     const id = user?.id
     const elMenuItem = document.querySelector("#menu-login")
-    const userMenuItem = `<li id="menu-login"><span class="menu-item" >My account</span><span id="down-arrow">▼</span><div class="dropdown"><a class="dropdown-item" href="/subscriptions" id="button-subs">My subscriptions</a><a class="dropdown-item" id="logout" href="https://package-scry.herokuapp.com/logout">Logout</a></div></li>`
+    const userMenuItem = `<li id="menu-login"><span class="menu-item" >My account</span><span id="down-arrow">▼</span><div class="dropdown"><a class="dropdown-item" href="/subscriptions" id="button-subs">My subscriptions</a><a class="dropdown-item" id="logout" href="https://0auth-production.up.railway.app/logout">Logout</a></div></li>`
 
     if (id) {
       elMenuItem.outerHTML = userMenuItem
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         try {
           const response = await fetch(
-            "https://package-scry.herokuapp.com/subscriptions",
+            "https://0auth-production.up.railway.app/subscriptions",
             {
               credentials: "include",
             }
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       if (!!emailValue && isChecked) {
         const response = await fetch(
-          "https://package-scry.herokuapp.com/post/subscribe",
+          "https://0auth-production.up.railway.app/post/subscribe",
           {
             credentials: "include",
             headers: { "Content-Type": "application/json" },
