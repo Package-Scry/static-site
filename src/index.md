@@ -75,8 +75,8 @@ layout: index.njk
         </svg>
       </div>
       <div class="list-text">
-      No need to memorize commands and
-      <br />package names
+      Check breaking changes of packages
+      <br />with just a click
       </div>
     </li>
     <li class="second-view-feature">
