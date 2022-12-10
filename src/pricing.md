@@ -1,7 +1,7 @@
 ---
 title: Pricing
 layout: default.njk
-permalink: 'pricing/'
+permalink: "pricing/"
 ---
 
 <style>
@@ -69,15 +69,8 @@ permalink: 'pricing/'
     grid-template-rows: 1fr auto auto 1fr;
     margin: 1.25rem 0;
   }
-  .pro {
-    height: 220px;
-    display: grid;
-    grid-template-rows: 1fr auto auto 1fr;
-    row-gap: 5px;
-    margin: 1.25rem 0;
-  }
-  .pro > .separator {
-    grid-column: 1 / span 2;
+  .pro > h2{
+    color: deepskyblue;
   }
   .separator {
     background: #0FA8B2;
@@ -107,7 +100,7 @@ permalink: 'pricing/'
     text-shadow: var(--default-shadow)
   }
   .pro > .sub-description {
-    text-align: left;
+    font-style: italic;
   }
   h3 + .sub-description {
     font-size: 1em;
@@ -190,15 +183,13 @@ permalink: 'pricing/'
       </ul>
       <a class="button primary pricing-button" href="/download">Download</a>
     </div>
-    <div class="pricing-table">
+    <div class="pricing-table pro">
       <h1 class="header">Pro</h1>
       <span class="description">For individuals & small teams</span>
       <div class="price-container pro">
         <div class="separator"></div>
-        <h1 id="monthly-price">$4.99</h1>
-        <span class="sub-description">user/month <br />billed if annually</span>
-        <h3>$6.99</h3>
-        <span class="sub-description">user/month <br />billed if monthly</span>
+        <h2>Free</h2>
+        <span class="sub-description">during open beta</span>
         <div class="separator"></div>
       </div>
       <ul class="features">
@@ -235,7 +226,7 @@ permalink: 'pricing/'
           <div class="description">Priority support </div>
         </li>
       </ul>
-      <a class="button primary pricing-button" href="/sign-up">Buy now</a>
+      <a class="button primary pricing-button" href="/download">Download for <strong>FREE</strong> during Beta</a>
     </div>
   </div>
 </div>
