@@ -27,7 +27,7 @@ permalink: "download/"
 #download-grid {
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
-  grid-template-rows: 300px 1px 300px;
+  grid-template-rows: 300px 1px;
   justify-items: center;
   align-items: center;
   grid-gap: 2rem;
@@ -89,15 +89,8 @@ permalink: "download/"
       </div>
       <div class="separator vertical"></div>
       <a id="mac-button" class="button primary" href="/download/mac">Download</a>
-      <div class="separator"></div>
-      <div class="type-grid">
-        <img class="icon" src="/img/windows.png" />
-        <div class="type">Windows</div>
-      </div>
-      <div class="separator vertical"></div>
-      <a id="win-button" class="button primary" href="/download/win">Download</a>
     </div>
-    
+
   </div>
   <div id="container-footer">
     <div class="separator"></div>
