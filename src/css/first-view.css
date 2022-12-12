@@ -46,6 +46,7 @@
 }
 #first-view-image {
   justify-self: end;
+  margin: 1rem 0;
 }
 #first-view-image img {
   max-width: 100%;

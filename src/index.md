@@ -108,7 +108,9 @@ layout: index.njk
   </ul>
   
   <div id="second-view-image">
-    <img src="/img/screenshot.png" />
+  <video width="760" autoplay loop>
+    <source src="/img/ps.mp4" type="video/mp4">
+  </video>
   </div>
 
 </div>
